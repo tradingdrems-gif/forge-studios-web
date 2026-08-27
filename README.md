@@ -1,4 +1,4 @@
-# Forge Studios — Web del estudio
+# Forge to Studio — Web del estudio
 
 Landing estática (HTML + CSS, sin build ni dependencias). Coherente con la estética de
 *Forge to Stars* (Orbitron/Inter, fondo espacial, dorado + cian).

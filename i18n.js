@@ -1,8 +1,8 @@
 /* ════════════════════════════════════════════════════════════════════════
-   i18n de Forge Studios — cambio de idioma en cliente, sin recargar.
+   i18n de Forge to Studio — cambio de idioma en cliente, sin recargar.
    Idiomas más usados en Steam (occidentales): EN, ES, FR, DE, PT-BR, IT.
    Añadir uno = una entrada en LANGS + un bloque en T. Los nombres propios
-   (Forge Studios, Forge to Stars, AXIOM, Steam) NO se traducen.
+   (Forge to Studio, Forge to Stars, AXIOM, Steam) NO se traducen.
    ════════════════════════════════════════════════════════════════════════ */
 (function () {
   const LANGS = [
@@ -30,7 +30,7 @@
       'gamecard.tag': 'A turn-based 4X grand strategy game. From a single forgotten planet to the throne of a shattered galactic empire.',
       'gamecard.status': 'Coming soon to Steam · PC', 'gamecard.link': 'Explore the game →',
       'studio.kicker': 'THE STUDIO', 'studio.title': 'Built by hand, made to last',
-      'studio.text': "Forge Studios is an independent studio with a single obsession: strategy games that respect the player's intelligence. No shortcuts, no half-built systems — every mechanic designed, tested and polished until it earns its place. We're making the kind of game we always wanted to play.",
+      'studio.text': "Forge to Studio is an independent studio with a single obsession: strategy games that respect the player's intelligence. No shortcuts, no half-built systems — every mechanic designed, tested and polished until it earns its place. We're making the kind of game we always wanted to play.",
       'press.kicker': 'PRESS', 'press.title': 'Press kit',
       'press.p': 'Press or content creator? Grab our logos, screenshots, trailer and fact sheet in one place.',
       'press.btn': 'Download press kit',
@@ -48,7 +48,7 @@
       'feat.axiom.h': 'AXIOM is watching', 'feat.axiom.p': 'Your enigmatic guiding AI — earn its trust, or push it down its Dark path. Your choices, its consequences.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'In-engine footage · work in progress',
       'shot.galaxy': '3D galactic map', 'shot.map': 'Galaxy & hyperlanes', 'shot.planet': 'Planet surface', 'shot.space': 'Space combat',
-      'cta.title': "The empire won't reunify itself.", 'cta.back': '← Back to Forge Studios',
+      'cta.title': "The empire won't reunify itself.", 'cta.back': '← Back to Forge to Studio',
     },
     es: {
       'nav.studio': 'Estudio', 'nav.game': 'Nuestro juego', 'nav.features': 'Características',
@@ -61,7 +61,7 @@
       'gamecard.tag': 'Un 4X de gran estrategia por turnos. De un planeta olvidado al trono de un imperio galáctico hecho pedazos.',
       'gamecard.status': 'Próximamente en Steam · PC', 'gamecard.link': 'Explora el juego →',
       'studio.kicker': 'EL ESTUDIO', 'studio.title': 'Hecho a mano, para durar',
-      'studio.text': 'Forge Studios es un estudio independiente con una obsesión: juegos de estrategia que respetan la inteligencia del jugador. Sin atajos, sin sistemas a medias — cada mecánica diseñada, probada y pulida hasta ganarse su sitio. Hacemos el juego que siempre quisimos jugar.',
+      'studio.text': 'Forge to Studio es un estudio independiente con una obsesión: juegos de estrategia que respetan la inteligencia del jugador. Sin atajos, sin sistemas a medias — cada mecánica diseñada, probada y pulida hasta ganarse su sitio. Hacemos el juego que siempre quisimos jugar.',
       'press.kicker': 'PRENSA', 'press.title': 'Kit de prensa',
       'press.p': '¿Eres prensa o creador de contenido? Descarga logos, capturas, tráiler y ficha en un solo sitio.',
       'press.btn': 'Descargar kit de prensa',
@@ -79,7 +79,7 @@
       'feat.axiom.h': 'AXIOM te observa', 'feat.axiom.p': 'Tu enigmática IA guía — gánate su confianza o empújala a su Rama Oscura. Tus decisiones, sus consecuencias.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'Imágenes in-engine · en desarrollo',
       'shot.galaxy': 'Mapa galáctico 3D', 'shot.map': 'Galaxia e hiperlíneas', 'shot.planet': 'Superficie del planeta', 'shot.space': 'Combate espacial',
-      'cta.title': 'El imperio no se reunificará solo.', 'cta.back': '← Volver a Forge Studios',
+      'cta.title': 'El imperio no se reunificará solo.', 'cta.back': '← Volver a Forge to Studio',
     },
     fr: {
       'nav.studio': 'Studio', 'nav.game': 'Notre jeu', 'nav.features': 'Fonctionnalités',
@@ -92,7 +92,7 @@
       'gamecard.tag': "Un 4X de grande stratégie au tour par tour. D'une planète oubliée au trône d'un empire galactique en ruines.",
       'gamecard.status': 'Bientôt sur Steam · PC', 'gamecard.link': 'Explorer le jeu →',
       'studio.kicker': 'LE STUDIO', 'studio.title': 'Fait main, fait pour durer',
-      'studio.text': "Forge Studios est un studio indépendant avec une obsession : des jeux de stratégie qui respectent l'intelligence du joueur. Pas de raccourcis, pas de systèmes à moitié finis — chaque mécanique conçue, testée et peaufinée jusqu'à mériter sa place. Nous créons le jeu que nous avons toujours voulu jouer.",
+      'studio.text': "Forge to Studio est un studio indépendant avec une obsession : des jeux de stratégie qui respectent l'intelligence du joueur. Pas de raccourcis, pas de systèmes à moitié finis — chaque mécanique conçue, testée et peaufinée jusqu'à mériter sa place. Nous créons le jeu que nous avons toujours voulu jouer.",
       'press.kicker': 'PRESSE', 'press.title': 'Kit presse',
       'press.p': 'Presse ou créateur de contenu ? Récupérez logos, captures, bande-annonce et fiche en un seul endroit.',
       'press.btn': 'Télécharger le kit presse',
@@ -110,7 +110,7 @@
       'feat.axiom.h': 'AXIOM vous observe', 'feat.axiom.p': 'Votre énigmatique IA guide — gagnez sa confiance ou poussez-la vers sa Voie Sombre. Vos choix, ses conséquences.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'Images in-engine · en développement',
       'shot.galaxy': 'Carte galactique 3D', 'shot.map': 'Galaxie et hyperroutes', 'shot.planet': 'Surface de la planète', 'shot.space': 'Combat spatial',
-      'cta.title': 'L\'empire ne se réunifiera pas tout seul.', 'cta.back': '← Retour à Forge Studios',
+      'cta.title': 'L\'empire ne se réunifiera pas tout seul.', 'cta.back': '← Retour à Forge to Studio',
     },
     de: {
       'nav.studio': 'Studio', 'nav.game': 'Unser Spiel', 'nav.features': 'Features',
@@ -123,7 +123,7 @@
       'gamecard.tag': 'Ein rundenbasiertes 4X-Grand-Strategy-Spiel. Von einem vergessenen Planeten zum Thron eines zerbrochenen Galaktischen Imperiums.',
       'gamecard.status': 'Bald auf Steam · PC', 'gamecard.link': 'Das Spiel erkunden →',
       'studio.kicker': 'DAS STUDIO', 'studio.title': 'Von Hand gebaut, für die Ewigkeit',
-      'studio.text': 'Forge Studios ist ein unabhängiges Studio mit einer Obsession: Strategiespiele, die die Intelligenz der Spieler respektieren. Keine Abkürzungen, keine halbfertigen Systeme — jede Mechanik durchdacht, getestet und poliert, bis sie sich ihren Platz verdient. Wir machen das Spiel, das wir immer spielen wollten.',
+      'studio.text': 'Forge to Studio ist ein unabhängiges Studio mit einer Obsession: Strategiespiele, die die Intelligenz der Spieler respektieren. Keine Abkürzungen, keine halbfertigen Systeme — jede Mechanik durchdacht, getestet und poliert, bis sie sich ihren Platz verdient. Wir machen das Spiel, das wir immer spielen wollten.',
       'press.kicker': 'PRESSE', 'press.title': 'Presse-Kit',
       'press.p': 'Presse oder Content-Creator? Logos, Screenshots, Trailer und Fact-Sheet an einem Ort.',
       'press.btn': 'Presse-Kit herunterladen',
@@ -141,7 +141,7 @@
       'feat.axiom.h': 'AXIOM beobachtet dich', 'feat.axiom.p': 'Deine rätselhafte Leit-KI — gewinne ihr Vertrauen oder treibe sie auf ihren Dunklen Pfad. Deine Entscheidungen, ihre Folgen.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'In-Engine-Aufnahmen · in Entwicklung',
       'shot.galaxy': '3D-Galaxiekarte', 'shot.map': 'Galaxie & Hyperrouten', 'shot.planet': 'Planetenoberfläche', 'shot.space': 'Weltraumkampf',
-      'cta.title': 'Das Imperium vereint sich nicht von selbst.', 'cta.back': '← Zurück zu Forge Studios',
+      'cta.title': 'Das Imperium vereint sich nicht von selbst.', 'cta.back': '← Zurück zu Forge to Studio',
     },
     pt: {
       'nav.studio': 'Estúdio', 'nav.game': 'Nosso jogo', 'nav.features': 'Recursos',
@@ -154,7 +154,7 @@
       'gamecard.tag': 'Um 4X de grande estratégia por turnos. De um planeta esquecido ao trono de um império galáctico em ruínas.',
       'gamecard.status': 'Em breve na Steam · PC', 'gamecard.link': 'Explorar o jogo →',
       'studio.kicker': 'O ESTÚDIO', 'studio.title': 'Feito à mão, feito para durar',
-      'studio.text': 'A Forge Studios é um estúdio independente com uma obsessão: jogos de estratégia que respeitam a inteligência do jogador. Sem atalhos, sem sistemas pela metade — cada mecânica pensada, testada e polida até merecer seu lugar. Fazemos o jogo que sempre quisemos jogar.',
+      'studio.text': 'A Forge to Studio é um estúdio independente com uma obsessão: jogos de estratégia que respeitam a inteligência do jogador. Sem atalhos, sem sistemas pela metade — cada mecânica pensada, testada e polida até merecer seu lugar. Fazemos o jogo que sempre quisemos jogar.',
       'press.kicker': 'IMPRENSA', 'press.title': 'Kit de imprensa',
       'press.p': 'Imprensa ou criador de conteúdo? Baixe logos, capturas, trailer e ficha num só lugar.',
       'press.btn': 'Baixar kit de imprensa',
@@ -172,7 +172,7 @@
       'feat.axiom.h': 'AXIOM está observando', 'feat.axiom.p': 'Sua enigmática IA guia — conquiste sua confiança ou empurre-a para o Caminho Sombrio. Suas escolhas, as consequências dela.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'Imagens in-engine · em desenvolvimento',
       'shot.galaxy': 'Mapa galáctico 3D', 'shot.map': 'Galáxia e hipervias', 'shot.planet': 'Superfície do planeta', 'shot.space': 'Combate espacial',
-      'cta.title': 'O império não vai se reunificar sozinho.', 'cta.back': '← Voltar para a Forge Studios',
+      'cta.title': 'O império não vai se reunificar sozinho.', 'cta.back': '← Voltar para a Forge to Studio',
     },
     it: {
       'nav.studio': 'Studio', 'nav.game': 'Il nostro gioco', 'nav.features': 'Caratteristiche',
@@ -185,7 +185,7 @@
       'gamecard.tag': 'Un 4X di grande strategia a turni. Da un pianeta dimenticato al trono di un impero galattico in frantumi.',
       'gamecard.status': 'Presto su Steam · PC', 'gamecard.link': 'Esplora il gioco →',
       'studio.kicker': 'LO STUDIO', 'studio.title': 'Fatto a mano, fatto per durare',
-      'studio.text': "Forge Studios è uno studio indipendente con un'ossessione: giochi di strategia che rispettano l'intelligenza del giocatore. Niente scorciatoie, niente sistemi a metà — ogni meccanica progettata, testata e rifinita finché non si merita il suo posto. Facciamo il gioco che abbiamo sempre voluto giocare.",
+      'studio.text': "Forge to Studio è uno studio indipendente con un'ossessione: giochi di strategia che rispettano l'intelligenza del giocatore. Niente scorciatoie, niente sistemi a metà — ogni meccanica progettata, testata e rifinita finché non si merita il suo posto. Facciamo il gioco che abbiamo sempre voluto giocare.",
       'press.kicker': 'STAMPA', 'press.title': 'Press kit',
       'press.p': 'Stampa o content creator? Scarica logo, screenshot, trailer e scheda in un unico posto.',
       'press.btn': 'Scarica il press kit',
@@ -203,7 +203,7 @@
       'feat.axiom.h': 'AXIOM ti osserva', 'feat.axiom.p': 'La tua enigmatica IA guida — guadagna la sua fiducia o spingila sul suo Sentiero Oscuro. Le tue scelte, le sue conseguenze.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'Immagini in-engine · in sviluppo',
       'shot.galaxy': 'Mappa galattica 3D', 'shot.map': 'Galassia e iperrotte', 'shot.planet': 'Superficie del pianeta', 'shot.space': 'Combattimento spaziale',
-      'cta.title': "L'impero non si riunificherà da solo.", 'cta.back': '← Torna a Forge Studios',
+      'cta.title': "L'impero non si riunificherà da solo.", 'cta.back': '← Torna a Forge to Studio',
     },
     zh: {
       'nav.studio': '工作室', 'nav.game': '我们的游戏', 'nav.features': '特色',
@@ -216,7 +216,7 @@
       'gamecard.tag': '一款回合制 4X 大战略游戏。从一颗被遗忘的行星，到破碎银河帝国的王座。',
       'gamecard.status': '即将登陆 Steam · PC', 'gamecard.link': '探索游戏 →',
       'studio.kicker': '关于工作室', 'studio.title': '手工打造，经久不衰',
-      'studio.text': 'Forge Studios 是一家独立工作室，只有一个执念：尊重玩家智慧的策略游戏。没有捷径，没有半成品系统——每一项机制都经过设计、测试与打磨，直到配得上它的位置。我们在做自己一直想玩的游戏。',
+      'studio.text': 'Forge to Studio 是一家独立工作室，只有一个执念：尊重玩家智慧的策略游戏。没有捷径，没有半成品系统——每一项机制都经过设计、测试与打磨，直到配得上它的位置。我们在做自己一直想玩的游戏。',
       'press.kicker': '媒体', 'press.title': '媒体资料包',
       'press.p': '媒体或内容创作者？在这里一次获取我们的 logo、截图、预告片和资料表。',
       'press.btn': '下载媒体资料包',
@@ -234,7 +234,7 @@
       'feat.axiom.h': 'AXIOM 在注视', 'feat.axiom.p': '你那神秘的引导 AI——赢得它的信任，或将它推向黑暗之路。你的选择，它的后果。',
       'gallery.kicker': '游戏画面', 'gallery.note': '引擎实机画面 · 开发中',
       'shot.galaxy': '3D 银河地图', 'shot.map': '银河与超空间航道', 'shot.planet': '行星表面', 'shot.space': '太空战斗',
-      'cta.title': '帝国不会自己统一。', 'cta.back': '← 返回 Forge Studios',
+      'cta.title': '帝国不会自己统一。', 'cta.back': '← 返回 Forge to Studio',
     },
     ja: {
       'nav.studio': 'スタジオ', 'nav.game': '私たちのゲーム', 'nav.features': '特徴',
@@ -247,7 +247,7 @@
       'gamecard.tag': 'ターン制の 4X 大戦略ゲーム。忘れられた一つの惑星から、砕け散った銀河帝国の玉座へ。',
       'gamecard.status': 'Steam にて近日登場 · PC', 'gamecard.link': 'ゲームを見る →',
       'studio.kicker': 'スタジオについて', 'studio.title': '手作りで、末永く',
-      'studio.text': 'Forge Studios は、一つの執念を抱くインディースタジオです。プレイヤーの知性を尊重するストラテジーゲーム。近道も、作りかけのシステムもありません——すべての仕組みを、ふさわしい場所を得るまで設計し、試し、磨き上げます。私たちは、いつも遊びたかったそのゲームを作っています。',
+      'studio.text': 'Forge to Studio は、一つの執念を抱くインディースタジオです。プレイヤーの知性を尊重するストラテジーゲーム。近道も、作りかけのシステムもありません——すべての仕組みを、ふさわしい場所を得るまで設計し、試し、磨き上げます。私たちは、いつも遊びたかったそのゲームを作っています。',
       'press.kicker': 'プレス', 'press.title': 'プレスキット',
       'press.p': '報道関係者やコンテンツクリエイターの方へ。ロゴ、スクリーンショット、トレーラー、ファクトシートを一か所でどうぞ。',
       'press.btn': 'プレスキットをダウンロード',
@@ -265,7 +265,7 @@
       'feat.axiom.h': 'AXIOM が見ている', 'feat.axiom.p': '謎めいた導きの AI——その信頼を勝ち取るか、闇の道へと突き落とすか。あなたの選択、その結末。',
       'gallery.kicker': 'ゲームプレイ', 'gallery.note': 'インエンジン映像 · 開発中',
       'shot.galaxy': '3D 銀河マップ', 'shot.map': '銀河とハイパーレーン', 'shot.planet': '惑星の地表', 'shot.space': '宇宙戦闘',
-      'cta.title': '帝国はひとりでに統一されはしない。', 'cta.back': '← Forge Studios へ戻る',
+      'cta.title': '帝国はひとりでに統一されはしない。', 'cta.back': '← Forge to Studio へ戻る',
     },
     ko: {
       'nav.studio': '스튜디오', 'nav.game': '우리 게임', 'nav.features': '특징',
@@ -278,7 +278,7 @@
       'gamecard.tag': '턴제 4X 대전략 게임. 잊혀진 하나의 행성에서, 산산조각 난 은하 제국의 왕좌까지.',
       'gamecard.status': 'Steam 출시 예정 · PC', 'gamecard.link': '게임 살펴보기 →',
       'studio.kicker': '스튜디오 소개', 'studio.title': '손으로 빚어, 오래 가도록',
-      'studio.text': 'Forge Studios는 한 가지 집념을 가진 독립 스튜디오입니다: 플레이어의 지성을 존중하는 전략 게임. 지름길도, 미완성 시스템도 없습니다——모든 메커니즘을 제자리를 얻을 때까지 설계하고, 시험하고, 다듬습니다. 우리는 늘 하고 싶었던 바로 그 게임을 만듭니다.',
+      'studio.text': 'Forge to Studio는 한 가지 집념을 가진 독립 스튜디오입니다: 플레이어의 지성을 존중하는 전략 게임. 지름길도, 미완성 시스템도 없습니다——모든 메커니즘을 제자리를 얻을 때까지 설계하고, 시험하고, 다듬습니다. 우리는 늘 하고 싶었던 바로 그 게임을 만듭니다.',
       'press.kicker': '프레스', 'press.title': '프레스 킷',
       'press.p': '언론이나 콘텐츠 크리에이터이신가요? 로고, 스크린샷, 트레일러, 팩트시트를 한곳에서 받아보세요.',
       'press.btn': '프레스 킷 다운로드',
@@ -296,7 +296,7 @@
       'feat.axiom.h': 'AXIOM이 지켜본다', 'feat.axiom.p': '당신의 수수께끼 같은 안내 AI——신뢰를 얻거나, 어둠의 길로 밀어 넣거나. 당신의 선택, 그것의 결과.',
       'gallery.kicker': '게임플레이', 'gallery.note': '인게임 영상 · 개발 중',
       'shot.galaxy': '3D 은하 지도', 'shot.map': '은하와 하이퍼레인', 'shot.planet': '행성 표면', 'shot.space': '우주 전투',
-      'cta.title': '제국은 스스로 통일되지 않는다.', 'cta.back': '← Forge Studios로 돌아가기',
+      'cta.title': '제국은 스스로 통일되지 않는다.', 'cta.back': '← Forge to Studio로 돌아가기',
     },
     ru: {
       'nav.studio': 'Студия', 'nav.game': 'Наша игра', 'nav.features': 'Особенности',
@@ -309,7 +309,7 @@
       'gamecard.tag': 'Пошаговая 4X-стратегия. От одной забытой планеты до трона расколотой галактической империи.',
       'gamecard.status': 'Скоро в Steam · ПК', 'gamecard.link': 'Открыть игру →',
       'studio.kicker': 'СТУДИЯ', 'studio.title': 'Собрано вручную, чтобы остаться',
-      'studio.text': 'Forge Studios — независимая студия с одной одержимостью: стратегии, уважающие ум игрока. Никаких срезанных углов, никаких недоделанных систем — каждая механика продумана, испытана и отшлифована, пока не заслужит своё место. Мы делаем ту игру, в которую всегда хотели играть сами.',
+      'studio.text': 'Forge to Studio — независимая студия с одной одержимостью: стратегии, уважающие ум игрока. Никаких срезанных углов, никаких недоделанных систем — каждая механика продумана, испытана и отшлифована, пока не заслужит своё место. Мы делаем ту игру, в которую всегда хотели играть сами.',
       'press.kicker': 'ПРЕССА', 'press.title': 'Пресс-кит',
       'press.p': 'Пресса или контент-мейкер? Заберите логотипы, скриншоты, трейлер и фактолист в одном месте.',
       'press.btn': 'Скачать пресс-кит',
@@ -327,7 +327,7 @@
       'feat.axiom.h': 'AXIOM наблюдает', 'feat.axiom.p': 'Твой загадочный ИИ-наставник — заслужи его доверие или толкни на Тёмный путь. Твой выбор — его последствия.',
       'gallery.kicker': 'ГЕЙМПЛЕЙ', 'gallery.note': 'Кадры из движка · в разработке',
       'shot.galaxy': '3D-карта галактики', 'shot.map': 'Галактика и гиперкоридоры', 'shot.planet': 'Поверхность планеты', 'shot.space': 'Космический бой',
-      'cta.title': 'Империя не воссоединится сама.', 'cta.back': '← Назад в Forge Studios',
+      'cta.title': 'Империя не воссоединится сама.', 'cta.back': '← Назад в Forge to Studio',
     },
   };
 
