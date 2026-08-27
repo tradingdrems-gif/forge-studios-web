@@ -88,8 +88,8 @@ main > section { max-width: var(--maxw); margin-inline: auto; padding: clamp(3re
   text-align: center; position: relative; overflow: hidden;
   padding-top: clamp(3rem, 7vw, 5rem) !important; border-radius: var(--radius);
   background:
-    linear-gradient(180deg, rgba(6,8,14,0.78), rgba(6,8,14,0.93)),
-    url('assets/shot-galaxy.png') center/cover no-repeat;
+    linear-gradient(180deg, rgba(6,8,14,0.72), rgba(6,8,14,0.90)),
+    url('assets/hero-art.jpg') center/cover no-repeat;
   border: 1px solid var(--line);
 }
 .hero__logo { width: min(420px, 82vw); height: auto; filter: drop-shadow(0 8px 40px rgba(58,123,213,0.35)); }
