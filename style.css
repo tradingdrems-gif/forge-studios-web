@@ -238,7 +238,7 @@ main > section { max-width: var(--maxw); margin-inline: auto; padding: clamp(3re
   padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.2rem, 4vw, 2.5rem) !important;
   background:
     linear-gradient(180deg, rgba(6,8,14,0.28) 0%, rgba(6,8,14,0.44) 42%, rgba(6,8,14,0.86) 100%),
-    url('assets/menu-art.jpg') center/cover no-repeat;
+    url('assets/menu-golden.jpg') center/cover no-repeat;
 }
 .ghero-title__logo {
   width: min(720px, 90vw); height: auto; margin-bottom: 1.3rem;
