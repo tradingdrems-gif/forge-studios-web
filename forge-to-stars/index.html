@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge to Stars — a sci-fi 4X grand strategy game · Forge Studios</title>
+  <meta name="description" content="Forge to Stars — a turn-based 4X grand strategy game. Rise from a single planet to reunify a shattered galactic empire. By Forge Studios." />
+
+  <meta property="og:title" content="Forge to Stars" />
+  <meta property="og:description" content="A turn-based 4X grand strategy game. From a single planet to a shattered galactic empire." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/header-capsule.png" />
+  <meta name="theme-color" content="#06080e" />
+
+  <link rel="icon" type="image/png" href="../assets/logo_forge_studios.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav__brand" href="../"><img src="../assets/logo_forge_studios.png" alt="Forge Studios" /></a>
+    <nav class="nav__links">
+      <a href="../" data-i18n="nav.studio">Studio</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#" data-i18n="nav.wishlist" data-todo="Steam">Wishlist</a>
+      <select class="lang" aria-label="Language"></select>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO — el JUEGO -->
+    <section class="hero ghero">
+      <img class="ghero__logo" src="../assets/logo_forge_to_stars.png" alt="Forge to Stars" onerror="this.src='../assets/game-capsule.png'" />
+      <p class="hero__eyebrow" data-i18n="game.eyebrow">TURN-BASED 4X · GRAND STRATEGY · SCI-FI</p>
+      <h1 class="hero__title" data-i18n="game.title">Forge to Stars</h1>
+      <p class="hero__lead" data-i18n="game.lead">
+        From a single forgotten planet to the throne of a shattered galactic empire.
+        Every system, every war and every world is yours to claim.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--steam" href="#" data-todo="Steam store page"><span class="btn__icon">▶</span> <span data-i18n="game.wishlist">Wishlist on Steam</span></a>
+      </div>
+      <p class="game__note" data-i18n="game.platforms">Coming soon to Steam · PC (Windows)</p>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features-sec">
+      <p class="section__kicker" data-i18n="features.kicker">WHAT MAKES IT DIFFERENT</p>
+      <h2 class="section__title" data-i18n="features.title">A galaxy that lives without you</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3 data-i18n="feat.living.h">A living galaxy</h3>
+          <p data-i18n="feat.living.p">Rival empires explore, colonize, build and wage war on their own — turn after turn, whether you're watching or not.</p>
+        </div>
+        <div class="feature">
+          <h3 data-i18n="feat.worlds.h">Real worlds, not menus</h3>
+          <p data-i18n="feat.worlds.p">One 3D galaxy of dozens of planets. Drop down to any of them and fight for it, hex by hex.</p>
+        </div>
+        <div class="feature">
+          <h3 data-i18n="feat.combat.h">Command the battle</h3>
+          <p data-i18n="feat.combat.p">Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</p>
+        </div>
+        <div class="feature">
+          <h3 data-i18n="feat.axiom.h">AXIOM is watching</h3>
+          <p data-i18n="feat.axiom.p">Your enigmatic guiding AI — earn its trust, or push it down its Dark path. Your choices, its consequences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <p class="section__kicker" data-i18n="gallery.kicker">GAMEPLAY</p>
+      <div class="gallery__grid">
+        <figure class="shot"><img src="../assets/shot-galaxy.png" alt="3D galactic map" loading="lazy" /><figcaption data-i18n="shot.galaxy">3D galactic map</figcaption></figure>
+        <figure class="shot"><img src="../assets/shot-map.png" alt="Galaxy and hyperlanes" loading="lazy" /><figcaption data-i18n="shot.map">Galaxy &amp; hyperlanes</figcaption></figure>
+        <figure class="shot"><img src="../assets/shot-planet.png" alt="Planet surface" loading="lazy" /><figcaption data-i18n="shot.planet">Planet surface</figcaption></figure>
+        <figure class="shot"><img src="../assets/shot-space.png" alt="Space combat" loading="lazy" /><figcaption data-i18n="shot.space">Space combat</figcaption></figure>
+      </div>
+      <p class="gallery__note" data-i18n="gallery.note">In-engine footage · work in progress</p>
+    </section>
+
+    <!-- CTA final -->
+    <section class="finalcta">
+      <h2 class="section__title" data-i18n="cta.title">The empire won't reunify itself.</h2>
+      <a class="btn btn--steam" href="#" data-todo="Steam store page"><span class="btn__icon">▶</span> <span data-i18n="game.wishlist">Wishlist on Steam</span></a>
+      <p><a class="backlink" href="../" data-i18n="cta.back">← Back to Forge Studios</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="footer__logo" src="../assets/logo_forge_studios.png" alt="Forge Studios" />
+    <p class="footer__copy">© <span id="year">2026</span> Forge Studios · <span data-i18n="footer.tag">Made with obsession.</span></p>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    for (const a of document.querySelectorAll('a[href^="#"]')) {
+      a.addEventListener('click', e => { const el = document.querySelector(a.getAttribute('href')); if (el && a.getAttribute('href') !== '#') { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } });
+    }
+  </script>
+</body>
+</html>

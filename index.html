@@ -6,9 +6,8 @@
   <title>Forge Studios — Independent strategy games</title>
   <meta name="description" content="Forge Studios is an independent studio crafting deep strategy games. Creators of Forge to Stars, a sci-fi 4X grand strategy game." />
 
-  <!-- Open Graph / social -->
   <meta property="og:title" content="Forge Studios" />
-  <meta property="og:description" content="Independent studio crafting deep strategy games. Creators of Forge to Stars." />
+  <meta property="og:description" content="Independent studio crafting deep strategy games." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/header-capsule.png" />
   <meta name="theme-color" content="#06080e" />
@@ -22,79 +21,53 @@
 <body>
   <div class="starfield" aria-hidden="true"></div>
 
-  <!-- ─── NAV ─────────────────────────────────────────── -->
   <header class="nav">
-    <a class="nav__brand" href="#top">
-      <img src="assets/logo_forge_studios.png" alt="Forge Studios" />
-    </a>
+    <a class="nav__brand" href="#top"><img src="assets/logo_forge_studios.png" alt="Forge Studios" /></a>
     <nav class="nav__links">
-      <a href="#game">Game</a>
-      <a href="#studio">Studio</a>
-      <a href="#press">Press</a>
-      <a href="#contact">Contact</a>
+      <a href="forge-to-stars/" data-i18n="nav.game">Our game</a>
+      <a href="#studio" data-i18n="nav.studio">Studio</a>
+      <a href="#press" data-i18n="nav.press">Press</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <select class="lang" aria-label="Language"></select>
     </nav>
   </header>
 
-  <!-- ─── HERO ────────────────────────────────────────── -->
   <main id="top">
+    <!-- HERO — el ESTUDIO -->
     <section class="hero">
       <img class="hero__logo" src="assets/logo_forge_studios.png" alt="Forge Studios" />
-      <p class="hero__eyebrow">INDEPENDENT STUDIO · STRATEGY · SCI-FI</p>
-      <h1 class="hero__title">We forge worlds.<br />You decide their fate.</h1>
-      <p class="hero__lead">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">INDEPENDENT STUDIO · STRATEGY · SCI-FI</p>
+      <h1 class="hero__title" data-i18n="hero.title">We forge worlds.<br />You decide their fate.</h1>
+      <p class="hero__lead" data-i18n="hero.lead">
         We're a small independent studio chasing one thing: strategy games with the
-        depth of the classics and the craft to earn a place beside them. Our debut —
-        <strong>Forge to Stars</strong>.
+        depth of the classics and the craft to earn a place beside them.
       </p>
       <div class="hero__cta">
-        <a class="btn btn--gold" href="#game">Discover the game</a>
-        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        <a class="btn btn--gold" href="forge-to-stars/" data-i18n="cta.discover">Discover our game</a>
+        <a class="btn btn--ghost" href="#contact" data-i18n="cta.contact">Get in touch</a>
       </div>
     </section>
 
-    <!-- ─── GAME ──────────────────────────────────────── -->
-    <section id="game" class="game">
-      <div class="game__media">
-        <img src="assets/game-capsule.png" alt="Forge to Stars — key art" />
-      </div>
-      <div class="game__info">
-        <p class="section__kicker">OUR FIRST GAME</p>
-        <h2 class="section__title">Forge to Stars</h2>
-        <p class="game__tagline">
-          From a single forgotten planet to the throne of a shattered galactic empire.
-          A turn-based 4X where every system, every war and every world is yours to claim.
-        </p>
-        <ul class="game__features">
-          <li><strong>A living galaxy.</strong> Rival empires explore, colonize, build and wage war on their own — turn after turn, whether you're watching or not.</li>
-          <li><strong>Real worlds, not menus.</strong> One 3D galaxy of dozens of planets. Drop down to any of them and fight for it, hex by hex.</li>
-          <li><strong>Command the battle.</strong> Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</li>
-          <li><strong>AXIOM is watching.</strong> Your enigmatic guiding AI — earn its trust, or push it down its Dark path. Your choices, its consequences.</li>
-        </ul>
-        <div class="game__cta">
-          <a class="btn btn--steam" href="#" data-todo="Link to Steam store page">
-            <span class="btn__icon">▶</span> Wishlist on Steam
-          </a>
+    <!-- OUR GAMES — escaparate que enlaza a la sub-página del juego -->
+    <section id="games" class="games">
+      <p class="section__kicker" data-i18n="games.kicker">OUR GAMES</p>
+      <h2 class="section__title" data-i18n="games.title">What we're building</h2>
+      <a class="gamecard" href="forge-to-stars/">
+        <div class="gamecard__art"><img src="assets/game-capsule.png" alt="Forge to Stars" /></div>
+        <div class="gamecard__body">
+          <h3 class="gamecard__name">Forge to Stars</h3>
+          <p class="gamecard__tag" data-i18n="gamecard.tag">A turn-based 4X grand strategy game. From a single forgotten planet to the throne of a shattered galactic empire.</p>
+          <span class="gamecard__status" data-i18n="gamecard.status">Coming soon to Steam · PC</span>
+          <span class="gamecard__link" data-i18n="gamecard.link">Explore the game →</span>
         </div>
-        <p class="game__note">Coming soon to Steam · PC (Windows)</p>
-      </div>
+      </a>
     </section>
 
-    <!-- ─── GAMEPLAY GALLERY ──────────────────────────── -->
-    <section class="gallery" aria-label="Gameplay screenshots">
-      <div class="gallery__grid">
-        <figure class="shot"><img src="assets/shot-galaxy.png" alt="3D galactic map" loading="lazy" /><figcaption>3D galactic map</figcaption></figure>
-        <figure class="shot"><img src="assets/shot-map.png" alt="Galaxy and hyperlanes" loading="lazy" /><figcaption>Galaxy &amp; hyperlanes</figcaption></figure>
-        <figure class="shot"><img src="assets/shot-planet.png" alt="Planet surface" loading="lazy" /><figcaption>Planet surface</figcaption></figure>
-        <figure class="shot"><img src="assets/shot-space.png" alt="Space combat" loading="lazy" /><figcaption>Space combat</figcaption></figure>
-      </div>
-      <p class="gallery__note">In-engine footage · work in progress</p>
-    </section>
-
-    <!-- ─── STUDIO ────────────────────────────────────── -->
+    <!-- STUDIO -->
     <section id="studio" class="studio">
-      <p class="section__kicker">THE STUDIO</p>
-      <h2 class="section__title">Built by hand, made to last</h2>
-      <p class="studio__text">
+      <p class="section__kicker" data-i18n="studio.kicker">THE STUDIO</p>
+      <h2 class="section__title" data-i18n="studio.title">Built by hand, made to last</h2>
+      <p class="studio__text" data-i18n="studio.text">
         Forge Studios is an independent studio with a single obsession: strategy games
         that respect the player's intelligence. No shortcuts, no half-built systems —
         every mechanic designed, tested and polished until it earns its place. We're
@@ -102,18 +75,18 @@
       </p>
     </section>
 
-    <!-- ─── PRESS + CONTACT ───────────────────────────── -->
+    <!-- PRESS + CONTACT -->
     <section id="press" class="cols">
       <div class="col">
-        <p class="section__kicker">PRESS</p>
-        <h3 class="col__title">Press kit</h3>
-        <p>Press or content creator? Grab our logos, screenshots, trailer and fact sheet in one place.</p>
-        <a class="btn btn--ghost" href="#" data-todo="Link to the press kit (presskit() / dopresskit.com)">Download press kit</a>
+        <p class="section__kicker" data-i18n="press.kicker">PRESS</p>
+        <h3 class="col__title" data-i18n="press.title">Press kit</h3>
+        <p data-i18n="press.p">Press or content creator? Grab our logos, screenshots, trailer and fact sheet in one place.</p>
+        <a class="btn btn--ghost" href="#" data-i18n="press.btn" data-todo="Link to press kit (presskit() / dopresskit.com)">Download press kit</a>
       </div>
       <div id="contact" class="col">
-        <p class="section__kicker">CONTACT</p>
-        <h3 class="col__title">Let's talk</h3>
-        <p>For partnerships, press or a friendly hello, we'd love to hear from you.</p>
+        <p class="section__kicker" data-i18n="contact.kicker">CONTACT</p>
+        <h3 class="col__title" data-i18n="contact.title">Let's talk</h3>
+        <p data-i18n="contact.p">For partnerships, press or a friendly hello, we'd love to hear from you.</p>
         <a class="contact__mail" href="mailto:forgetostudio@gmail.com">forgetostudio@gmail.com</a>
         <div class="socials">
           <a href="#" data-todo="Steam">Steam</a>
@@ -125,19 +98,16 @@
     </section>
   </main>
 
-  <!-- ─── FOOTER ──────────────────────────────────────── -->
   <footer class="footer">
     <img class="footer__logo" src="assets/logo_forge_studios.png" alt="Forge Studios" />
-    <p class="footer__copy">© <span id="year">2026</span> Forge Studios · Made with obsession.</p>
+    <p class="footer__copy">© <span id="year">2026</span> Forge Studios · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
+  <script src="i18n.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
-      a.addEventListener('click', e => {
-        const el = document.querySelector(a.getAttribute('href'));
-        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
-      });
+      a.addEventListener('click', e => { const el = document.querySelector(a.getAttribute('href')); if (el && a.getAttribute('href') !== '#') { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } });
     }
   </script>
 </body>
