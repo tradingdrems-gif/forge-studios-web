@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge Studios — Estudio de videojuegos indie</title>
+  <meta name="description" content="Forge Studios — estudio indie de videojuegos de estrategia. Creadores de Forge to Stars, un 4X de gran estrategia de ciencia ficción." />
+
+  <!-- Open Graph / redes -->
+  <meta property="og:title" content="Forge Studios" />
+  <meta property="og:description" content="Estudio indie. Creadores de Forge to Stars, 4X de gran estrategia sci-fi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo_forge_to_stars.png" />
+  <meta name="theme-color" content="#06080e" />
+
+  <link rel="icon" type="image/png" href="assets/logo_forge_studios.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+
+  <!-- ─── NAV ─────────────────────────────────────────── -->
+  <header class="nav">
+    <a class="nav__brand" href="#top">
+      <img src="assets/logo_forge_studios.png" alt="Forge Studios" />
+    </a>
+    <nav class="nav__links">
+      <a href="#juego">Juego</a>
+      <a href="#estudio">Estudio</a>
+      <a href="#prensa">Prensa</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ────────────────────────────────────────── -->
+  <main id="top">
+    <section class="hero">
+      <img class="hero__logo" src="assets/logo_forge_studios.png" alt="Forge Studios" />
+      <p class="hero__eyebrow">ESTUDIO INDIE · ESTRATEGIA · SCI-FI</p>
+      <h1 class="hero__title">Forjamos mundos.<br />Tú decides su destino.</h1>
+      <p class="hero__lead">
+        Somos un estudio independiente que construye juegos de estrategia profundos,
+        con alma y hechos a mano. Nuestro primer título: <strong>Forge to Stars</strong>.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#juego">Descubre Forge to Stars</a>
+        <a class="btn btn--ghost" href="#contacto">Contacto</a>
+      </div>
+    </section>
+
+    <!-- ─── JUEGO ─────────────────────────────────────── -->
+    <section id="juego" class="game">
+      <div class="game__media">
+        <img src="assets/logo_forge_to_stars.png" alt="Forge to Stars" />
+      </div>
+      <div class="game__info">
+        <p class="section__kicker">NUESTRO JUEGO</p>
+        <h2 class="section__title">Forge to Stars</h2>
+        <p class="game__tagline">
+          Un 4X de gran estrategia por turnos: de la era industrial de un planeta
+          aislado a la reunificación del Gran Imperio Galáctico.
+        </p>
+        <ul class="game__features">
+          <li>Explora, coloniza y conquista sistemas solares en un mapa galáctico 3D.</li>
+          <li>Combate táctico terrestre y espacial por turnos, con cartas de unidades.</li>
+          <li>Una IA que juega como tú: expande, construye y hace la guerra turno a turno.</li>
+          <li>AXIOM, tu IA guía, y sus ramas de Luz y Oscuridad según tus decisiones.</li>
+        </ul>
+        <div class="game__cta">
+          <a class="btn btn--steam" href="#" data-todo="Enlace a la ficha de Steam">
+            <span class="btn__icon">▶</span> Añadir a la lista de deseados en Steam
+          </a>
+        </div>
+        <p class="game__note">Próximamente en Steam · PC (Windows)</p>
+      </div>
+    </section>
+
+    <!-- ─── GALERÍA (placeholders) ────────────────────── -->
+    <section class="gallery" aria-label="Capturas del juego">
+      <div class="gallery__grid">
+        <div class="shot" data-todo="Captura: mapa galáctico 3D">Mapa galáctico</div>
+        <div class="shot" data-todo="Captura: combate terrestre hex">Combate terrestre</div>
+        <div class="shot" data-todo="Captura: combate espacial">Combate espacial</div>
+        <div class="shot" data-todo="Captura: gestión de planeta">Gestión de planeta</div>
+      </div>
+    </section>
+
+    <!-- ─── ESTUDIO ───────────────────────────────────── -->
+    <section id="estudio" class="studio">
+      <p class="section__kicker">EL ESTUDIO</p>
+      <h2 class="section__title">Forge Studios</h2>
+      <p class="studio__text">
+        Un estudio independiente con una obsesión: juegos de estrategia que respeten
+        la inteligencia del jugador. Sin atajos, sin sistemas a medias —
+        cada mecánica pensada, probada y pulida como lo haría un estudio serio.
+      </p>
+    </section>
+
+    <!-- ─── PRENSA + CONTACTO ─────────────────────────── -->
+    <section id="prensa" class="cols">
+      <div class="col">
+        <p class="section__kicker">PRENSA</p>
+        <h3 class="col__title">Press kit</h3>
+        <p>¿Eres prensa o creador de contenido? Descarga logos, capturas, tráiler y datos del juego.</p>
+        <a class="btn btn--ghost" href="#" data-todo="Enlace al press kit (presskit() / dopresskit.com)">Descargar press kit</a>
+      </div>
+      <div id="contacto" class="col">
+        <p class="section__kicker">CONTACTO</p>
+        <h3 class="col__title">Hablemos</h3>
+        <p>Colaboraciones, prensa o simplemente saludar:</p>
+        <a class="contact__mail" href="mailto:hola@forgetostudio.com" data-todo="Confirmar email">hola@forgetostudio.com</a>
+        <div class="socials">
+          <a href="#" data-todo="Steam">Steam</a>
+          <a href="#" data-todo="Discord">Discord</a>
+          <a href="#" data-todo="X / Twitter">X</a>
+          <a href="#" data-todo="YouTube">YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ──────────────────────────────────────── -->
+  <footer class="footer">
+    <img class="footer__logo" src="assets/logo_forge_studios.png" alt="Forge Studios" />
+    <p class="footer__copy">© <span id="year">2026</span> Forge Studios. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Scroll suave para los anclajes de la navegación.
+    for (const a of document.querySelectorAll('a[href^="#"]')) {
+      a.addEventListener('click', e => {
+        const el = document.querySelector(a.getAttribute('href'));
+        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    }
+  </script>
+</body>
+</html>
