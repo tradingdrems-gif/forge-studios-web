@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -53,7 +53,12 @@
       <p class="section__kicker" data-i18n="games.kicker">OUR GAMES</p>
       <h2 class="section__title" data-i18n="games.title">What we're building</h2>
       <a class="gamecard" href="forge-to-stars/">
-        <div class="gamecard__art"><img src="assets/game-capsule.png" alt="Forge to Stars" /></div>
+        <div class="gamecard__art">
+          <div class="gamecard__frame">
+            <img class="gamecard__shot" src="assets/menu-golden.jpg" alt="Forge to Stars" />
+            <img class="gamecard__logo" src="assets/logo_forge_to_stars.png" alt="Forge to Stars" />
+          </div>
+        </div>
         <div class="gamecard__body">
           <h3 class="gamecard__name">Forge to Stars</h3>
           <p class="gamecard__tag" data-i18n="gamecard.tag">A turn-based 4X grand strategy game. From a single forgotten planet to the throne of a shattered galactic empire.</p>
@@ -103,7 +108,7 @@
     <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
-  <script src="i18n.js?v=3"></script>
+  <script src="i18n.js?v=4"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
