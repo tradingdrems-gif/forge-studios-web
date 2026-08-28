@@ -5,17 +5,33 @@
    (Forge to Studio, Forge to Stars, AXIOM, Steam) NO se traducen.
    ════════════════════════════════════════════════════════════════════════ */
 (function () {
+  // Banderas SVG inline (3:2). Emoji de bandera NO se renderiza en Windows →
+  // usamos SVG propios: nítidos, offline, sin dependencias. Simplificadas pero
+  // reconocibles a 22px. Idioma → país: pt=Brasil (texto pt-BR), zh=China, en=EE.UU.
+  const FLAGS = {
+    us: '<svg class="langsel__flag" viewBox="0 0 19 10"><rect width="19" height="10" fill="#b22234"/><g fill="#fff"><rect y="0.77" width="19" height="0.77"/><rect y="2.31" width="19" height="0.77"/><rect y="3.85" width="19" height="0.77"/><rect y="5.38" width="19" height="0.77"/><rect y="6.92" width="19" height="0.77"/><rect y="8.46" width="19" height="0.77"/></g><rect width="8" height="5.38" fill="#3c3b6e"/><g fill="#fff"><circle cx="1.2" cy="1" r="0.32"/><circle cx="3" cy="1" r="0.32"/><circle cx="4.8" cy="1" r="0.32"/><circle cx="6.6" cy="1" r="0.32"/><circle cx="2.1" cy="2.2" r="0.32"/><circle cx="3.9" cy="2.2" r="0.32"/><circle cx="5.7" cy="2.2" r="0.32"/><circle cx="1.2" cy="3.4" r="0.32"/><circle cx="3" cy="3.4" r="0.32"/><circle cx="4.8" cy="3.4" r="0.32"/><circle cx="6.6" cy="3.4" r="0.32"/><circle cx="2.1" cy="4.5" r="0.32"/><circle cx="3.9" cy="4.5" r="0.32"/><circle cx="5.7" cy="4.5" r="0.32"/></g></svg>',
+    es: '<svg class="langsel__flag" viewBox="0 0 3 2"><rect width="3" height="2" fill="#aa151b"/><rect y="0.5" width="3" height="1" fill="#f1bf00"/></svg>',
+    fr: '<svg class="langsel__flag" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#0055a4"/><rect x="2" width="1" height="2" fill="#ef4135"/></svg>',
+    de: '<svg class="langsel__flag" viewBox="0 0 5 3"><rect width="5" height="3" fill="#000"/><rect y="1" width="5" height="1" fill="#d00"/><rect y="2" width="5" height="1" fill="#ffce00"/></svg>',
+    br: '<svg class="langsel__flag" viewBox="0 0 30 20"><rect width="30" height="20" fill="#009c3b"/><polygon points="15,2.5 27.5,10 15,17.5 2.5,10" fill="#ffdf00"/><circle cx="15" cy="10" r="4.6" fill="#002776"/></svg>',
+    it: '<svg class="langsel__flag" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect x="2" width="1" height="2" fill="#ce2b37"/></svg>',
+    cn: '<svg class="langsel__flag" viewBox="0 0 30 20"><rect width="30" height="20" fill="#de2910"/><g fill="#ffde00"><circle cx="6" cy="5" r="2.6"/><circle cx="11.5" cy="2.2" r="0.9"/><circle cx="13.2" cy="4.4" r="0.9"/><circle cx="13.2" cy="7.2" r="0.9"/><circle cx="11.5" cy="9.2" r="0.9"/></g></svg>',
+    jp: '<svg class="langsel__flag" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><circle cx="1.5" cy="1" r="0.6" fill="#bc002d"/></svg>',
+    kr: '<svg class="langsel__flag" viewBox="0 0 36 24"><rect width="36" height="24" fill="#fff"/><path d="M18 6a6 6 0 0 1 0 12 3 3 0 0 0 0-6 3 3 0 0 1 0-6z" fill="#cd2e3a"/><path d="M18 6a6 6 0 0 0 0 12 3 3 0 0 1 0-6 3 3 0 0 0 0-6z" fill="#0047a0"/></svg>',
+    ru: '<svg class="langsel__flag" viewBox="0 0 9 6"><rect width="9" height="6" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/></svg>',
+  };
+
   const LANGS = [
-    { code: 'en', label: 'English'    },
-    { code: 'es', label: 'Español'    },
-    { code: 'fr', label: 'Français'   },
-    { code: 'de', label: 'Deutsch'    },
-    { code: 'pt', label: 'Português'  },
-    { code: 'it', label: 'Italiano'   },
-    { code: 'zh', label: '简体中文'    },
-    { code: 'ja', label: '日本語'      },
-    { code: 'ko', label: '한국어'      },
-    { code: 'ru', label: 'Русский'    },
+    { code: 'en', label: 'English',    flag: 'us' },
+    { code: 'es', label: 'Español',    flag: 'es' },
+    { code: 'fr', label: 'Français',   flag: 'fr' },
+    { code: 'de', label: 'Deutsch',    flag: 'de' },
+    { code: 'pt', label: 'Português',  flag: 'br' },
+    { code: 'it', label: 'Italiano',   flag: 'it' },
+    { code: 'zh', label: '简体中文',    flag: 'cn' },
+    { code: 'ja', label: '日本語',      flag: 'jp' },
+    { code: 'ko', label: '한국어',      flag: 'kr' },
+    { code: 'ru', label: 'Русский',    flag: 'ru' },
   ];
 
   const T = {
@@ -331,6 +347,9 @@
     },
   };
 
+  const meta = (code) => LANGS.find(l => l.code === code) || LANGS[0];
+  const dropdowns = []; // { root, btnFlag, btnLabel, menu }
+
   function apply(lang) {
     const dict = T[lang] || T.en;
     for (const el of document.querySelectorAll('[data-i18n]')) {
@@ -339,7 +358,44 @@
     }
     document.documentElement.lang = lang;
     try { localStorage.setItem('fs_lang', lang); } catch (_) {}
-    for (const sel of document.querySelectorAll('select.lang')) sel.value = lang;
+    const m = meta(lang);
+    for (const d of dropdowns) {
+      d.btnFlag.innerHTML = FLAGS[m.flag] || '';
+      d.btnLabel.textContent = m.label;
+      d.menu.querySelectorAll('.langsel__opt').forEach(o => o.classList.toggle('sel', o.dataset.code === lang));
+      d.root.classList.remove('open');
+      d.btn.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  // Construye un dropdown de banderas en el sitio de cada <select.lang> (o <div.lang>).
+  function buildDropdown(anchor) {
+    const root = document.createElement('div');
+    root.className = 'langsel';
+    const caret = '<svg class="langsel__caret" viewBox="0 0 10 7"><path fill="currentColor" d="M0 0h10L5 7z"/></svg>';
+    root.innerHTML =
+      '<button type="button" class="langsel__btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">' +
+        '<span class="langsel__bflag"></span><span class="langsel__cur"></span>' + caret +
+      '</button>' +
+      '<div class="langsel__menu" role="listbox">' +
+        LANGS.map(l => `<button type="button" class="langsel__opt" role="option" data-code="${l.code}">${FLAGS[l.flag] || ''}<span>${l.label}</span></button>`).join('') +
+      '</div>';
+    anchor.replaceWith(root);
+
+    const btn = root.querySelector('.langsel__btn');
+    const menu = root.querySelector('.langsel__menu');
+    const rec = { root, btn, menu, btnFlag: root.querySelector('.langsel__bflag'), btnLabel: root.querySelector('.langsel__cur') };
+    dropdowns.push(rec);
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = root.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.querySelectorAll('.langsel__opt').forEach(opt => {
+      opt.addEventListener('click', () => apply(opt.dataset.code));
+    });
+    return rec;
   }
 
   function initSwitcher() {
@@ -348,10 +404,10 @@
     const browser = (navigator.language || 'en').slice(0, 2).toLowerCase();
     const start = T[stored] ? stored : (T[browser] ? browser : 'en');
 
-    for (const sel of document.querySelectorAll('select.lang')) {
-      sel.innerHTML = LANGS.map(l => `<option value="${l.code}">${l.label}</option>`).join('');
-      sel.addEventListener('change', () => apply(sel.value));
-    }
+    document.querySelectorAll('.lang, select.lang').forEach(buildDropdown);
+    // Cerrar al hacer clic fuera o con Escape.
+    document.addEventListener('click', () => dropdowns.forEach(d => { d.root.classList.remove('open'); d.btn.setAttribute('aria-expanded', 'false'); }));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') dropdowns.forEach(d => d.root.classList.remove('open')); });
     apply(start);
   }
 

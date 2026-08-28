@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=5" />
+  <link rel="stylesheet" href="../style.css?v=6" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -99,12 +99,26 @@
     <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
-  <script src="../i18n.js?v=5"></script>
+  <!-- Lightbox de galería -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="../i18n.js?v=6"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
       a.addEventListener('click', e => { const el = document.querySelector(a.getAttribute('href')); if (el && a.getAttribute('href') !== '#') { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); } });
     }
+    // Lightbox: clic en una captura → pantalla completa (sin recorte).
+    const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lightbox-img');
+    const closeLb = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; };
+    document.querySelectorAll('.shot img').forEach(img => {
+      img.addEventListener('click', () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); });
+    });
+    lb.addEventListener('click', closeLb);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
   </script>
 </body>
 </html>

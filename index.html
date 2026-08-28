@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -35,16 +35,18 @@
   <main id="top">
     <!-- HERO — el ESTUDIO -->
     <section class="hero">
-      <img class="hero__logo" src="assets/logo_forge_studios.png" alt="Forge to Studio" />
-      <p class="hero__eyebrow" data-i18n="hero.eyebrow">INDEPENDENT STUDIO · STRATEGY · SCI-FI</p>
-      <h1 class="hero__title" data-i18n="hero.title">We forge worlds.<br />You decide their fate.</h1>
-      <p class="hero__lead" data-i18n="hero.lead">
-        We're a small independent studio chasing one thing: strategy games with the
-        depth of the classics and the craft to earn a place beside them.
-      </p>
-      <div class="hero__cta">
-        <a class="btn btn--gold" href="forge-to-stars/" data-i18n="cta.discover">Discover our game</a>
-        <a class="btn btn--ghost" href="#contact" data-i18n="cta.contact">Get in touch</a>
+      <div class="hero__inner">
+        <img class="hero__logo" src="assets/logo_forge_studios.png" alt="Forge to Studio" />
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow">INDEPENDENT STUDIO · STRATEGY · SCI-FI</p>
+        <h1 class="hero__title" data-i18n="hero.title">We forge worlds.<br />You decide their fate.</h1>
+        <p class="hero__lead" data-i18n="hero.lead">
+          We're a small independent studio chasing one thing: strategy games with the
+          depth of the classics and the craft to earn a place beside them.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--gold" href="forge-to-stars/" data-i18n="cta.discover">Discover our game</a>
+          <a class="btn btn--ghost" href="#contact" data-i18n="cta.contact">Get in touch</a>
+        </div>
       </div>
     </section>
 
@@ -86,7 +88,7 @@
         <p class="section__kicker" data-i18n="press.kicker">PRESS</p>
         <h3 class="col__title" data-i18n="press.title">Press kit</h3>
         <p data-i18n="press.p">Press or content creator? Grab our logos, screenshots, trailer and fact sheet in one place.</p>
-        <a class="btn btn--ghost" href="#" data-i18n="press.btn" data-todo="Link to press kit (presskit() / dopresskit.com)">Download press kit</a>
+        <a class="btn btn--ghost" href="press/" data-i18n="press.btn">Download press kit</a>
       </div>
       <div id="contact" class="col">
         <p class="section__kicker" data-i18n="contact.kicker">CONTACT</p>
@@ -107,7 +109,7 @@
     <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
-  <script src="i18n.js?v=5"></script>
+  <script src="i18n.js?v=6"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
