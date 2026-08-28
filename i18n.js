@@ -36,7 +36,7 @@
 
   const T = {
     en: {
-      'nav.studio': 'Studio', 'nav.game': 'Our game', 'nav.features': 'Features',
+      'nav.studio': 'Studio', 'nav.game': 'Our games', 'nav.features': 'Features',
       'nav.gallery': 'Gallery', 'nav.wishlist': 'Wishlist', 'nav.press': 'Press', 'nav.contact': 'Contact',
       'hero.eyebrow': 'INDEPENDENT STUDIO · STRATEGY · SCI-FI',
       'hero.title': 'We forge worlds.<br>You decide their fate.',
@@ -67,7 +67,7 @@
       'cta.title': "The empire won't reunify itself.", 'cta.back': '← Back to Forge to Studio',
     },
     es: {
-      'nav.studio': 'Estudio', 'nav.game': 'Nuestro juego', 'nav.features': 'Características',
+      'nav.studio': 'Estudio', 'nav.game': 'Nuestros juegos', 'nav.features': 'Características',
       'nav.gallery': 'Galería', 'nav.wishlist': 'Deseados', 'nav.press': 'Prensa', 'nav.contact': 'Contacto',
       'hero.eyebrow': 'ESTUDIO INDEPENDIENTE · ESTRATEGIA · CIENCIA FICCIÓN',
       'hero.title': 'Forjamos mundos.<br>Tú decides su destino.',
@@ -98,7 +98,7 @@
       'cta.title': 'El imperio no se reunificará solo.', 'cta.back': '← Volver a Forge to Studio',
     },
     fr: {
-      'nav.studio': 'Studio', 'nav.game': 'Notre jeu', 'nav.features': 'Fonctionnalités',
+      'nav.studio': 'Studio', 'nav.game': 'Nos jeux', 'nav.features': 'Fonctionnalités',
       'nav.gallery': 'Galerie', 'nav.wishlist': 'Souhaits', 'nav.press': 'Presse', 'nav.contact': 'Contact',
       'hero.eyebrow': 'STUDIO INDÉPENDANT · STRATÉGIE · SCI-FI',
       'hero.title': 'Nous forgeons des mondes.<br>À vous d\'en décider le destin.',
@@ -129,7 +129,7 @@
       'cta.title': 'L\'empire ne se réunifiera pas tout seul.', 'cta.back': '← Retour à Forge to Studio',
     },
     de: {
-      'nav.studio': 'Studio', 'nav.game': 'Unser Spiel', 'nav.features': 'Features',
+      'nav.studio': 'Studio', 'nav.game': 'Unsere Spiele', 'nav.features': 'Features',
       'nav.gallery': 'Galerie', 'nav.wishlist': 'Wunschliste', 'nav.press': 'Presse', 'nav.contact': 'Kontakt',
       'hero.eyebrow': 'UNABHÄNGIGES STUDIO · STRATEGIE · SCI-FI',
       'hero.title': 'Wir schmieden Welten.<br>Du entscheidest ihr Schicksal.',
@@ -160,7 +160,7 @@
       'cta.title': 'Das Imperium vereint sich nicht von selbst.', 'cta.back': '← Zurück zu Forge to Studio',
     },
     pt: {
-      'nav.studio': 'Estúdio', 'nav.game': 'Nosso jogo', 'nav.features': 'Recursos',
+      'nav.studio': 'Estúdio', 'nav.game': 'Nossos jogos', 'nav.features': 'Recursos',
       'nav.gallery': 'Galeria', 'nav.wishlist': 'Desejos', 'nav.press': 'Imprensa', 'nav.contact': 'Contato',
       'hero.eyebrow': 'ESTÚDIO INDEPENDENTE · ESTRATÉGIA · FICÇÃO CIENTÍFICA',
       'hero.title': 'Forjamos mundos.<br>Você decide o destino deles.',
@@ -191,7 +191,7 @@
       'cta.title': 'O império não vai se reunificar sozinho.', 'cta.back': '← Voltar para a Forge to Studio',
     },
     it: {
-      'nav.studio': 'Studio', 'nav.game': 'Il nostro gioco', 'nav.features': 'Caratteristiche',
+      'nav.studio': 'Studio', 'nav.game': 'I nostri giochi', 'nav.features': 'Caratteristiche',
       'nav.gallery': 'Galleria', 'nav.wishlist': 'Desideri', 'nav.press': 'Stampa', 'nav.contact': 'Contatti',
       'hero.eyebrow': 'STUDIO INDIPENDENTE · STRATEGIA · SCI-FI',
       'hero.title': 'Forgiamo mondi.<br>Tu ne decidi il destino.',
@@ -315,7 +315,7 @@
       'cta.title': '제국은 스스로 통일되지 않는다.', 'cta.back': '← Forge to Studio로 돌아가기',
     },
     ru: {
-      'nav.studio': 'Студия', 'nav.game': 'Наша игра', 'nav.features': 'Особенности',
+      'nav.studio': 'Студия', 'nav.game': 'Наши игры', 'nav.features': 'Особенности',
       'nav.gallery': 'Галерея', 'nav.wishlist': 'Желаемое', 'nav.press': 'Пресса', 'nav.contact': 'Контакты',
       'hero.eyebrow': 'НЕЗАВИСИМАЯ СТУДИЯ · СТРАТЕГИЯ · НАУЧНАЯ ФАНТАСТИКА',
       'hero.title': 'Мы куём миры.<br>Их судьбу решаешь ты.',
@@ -361,7 +361,7 @@
     const m = meta(lang);
     for (const d of dropdowns) {
       d.btnFlag.innerHTML = FLAGS[m.flag] || '';
-      d.btnLabel.textContent = m.label;
+      d.btn.setAttribute('aria-label', 'Language: ' + m.label);
       d.menu.querySelectorAll('.langsel__opt').forEach(o => o.classList.toggle('sel', o.dataset.code === lang));
       d.root.classList.remove('open');
       d.btn.setAttribute('aria-expanded', 'false');
@@ -375,16 +375,16 @@
     const caret = '<svg class="langsel__caret" viewBox="0 0 10 7"><path fill="currentColor" d="M0 0h10L5 7z"/></svg>';
     root.innerHTML =
       '<button type="button" class="langsel__btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">' +
-        '<span class="langsel__bflag"></span><span class="langsel__cur"></span>' + caret +
+        '<span class="langsel__bflag"></span>' + caret +
       '</button>' +
       '<div class="langsel__menu" role="listbox">' +
-        LANGS.map(l => `<button type="button" class="langsel__opt" role="option" data-code="${l.code}">${FLAGS[l.flag] || ''}<span>${l.label}</span></button>`).join('') +
+        LANGS.map(l => `<button type="button" class="langsel__opt" role="option" data-code="${l.code}" title="${l.label}" aria-label="${l.label}">${FLAGS[l.flag] || ''}</button>`).join('') +
       '</div>';
     anchor.replaceWith(root);
 
     const btn = root.querySelector('.langsel__btn');
     const menu = root.querySelector('.langsel__menu');
-    const rec = { root, btn, menu, btnFlag: root.querySelector('.langsel__bflag'), btnLabel: root.querySelector('.langsel__cur') };
+    const rec = { root, btn, menu, btnFlag: root.querySelector('.langsel__bflag') };
     dropdowns.push(rec);
 
     btn.addEventListener('click', (e) => {
