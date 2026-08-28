@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=8" />
+  <link rel="stylesheet" href="../style.css?v=9" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -24,53 +24,54 @@
   <header class="nav">
     <a class="nav__brand" href="../"><img src="../assets/logo_forge_studios.png" alt="Forge to Studio" /></a>
     <nav class="nav__links">
-      <a href="../">Studio</a>
-      <a href="../forge-to-stars/">Our Games</a>
-      <a href="mailto:contact@forgetostudio.com">Contact</a>
+      <a href="../" data-i18n="nav.studio">Studio</a>
+      <a href="../forge-to-stars/" data-i18n="nav.game">Our Games</a>
+      <a href="mailto:contact@forgetostudio.com" data-i18n="nav.contact">Contact</a>
+      <select class="lang" aria-label="Language"></select>
     </nav>
   </header>
 
   <main id="top">
     <section class="press-hero">
-      <p class="section__kicker">PRESS KIT</p>
+      <p class="section__kicker" data-i18n="pk.kicker">PRESS KIT</p>
       <h1 class="section__title">Forge to Stars</h1>
       <p class="press-lead">
-        Everything press and content creators need in one place: fact sheet, descriptions,
-        features, logos and screenshots. Missing something? <a href="mailto:contact@forgetostudio.com" style="color:var(--cyan)">Just ask.</a>
+        <span data-i18n="pk.lead">Everything press and content creators need in one place: fact sheet, descriptions, features, logos and screenshots. Missing something?</span>
+        <a href="mailto:contact@forgetostudio.com" style="color:var(--cyan)" data-i18n="pk.ask">Just ask.</a>
       </p>
       <div class="hero__cta">
-        <a class="btn btn--gold" href="forge-to-stars-presskit.zip" download>Download all assets (.zip)</a>
-        <a class="btn btn--ghost" href="../forge-to-stars/">View the game page</a>
+        <a class="btn btn--gold" href="forge-to-stars-presskit.zip" download data-i18n="pk.dl">Download all assets (.zip)</a>
+        <a class="btn btn--ghost" href="../forge-to-stars/" data-i18n="pk.view">View the game page</a>
       </div>
     </section>
 
     <section>
       <!-- FACT SHEET -->
       <div class="press-block">
-        <h2>Fact sheet</h2>
+        <h2 data-i18n="pk.factsheet">Fact sheet</h2>
       </div>
       <dl class="factsheet">
-        <div class="fact"><dt>Developer</dt><dd>Forge to Studio — independent</dd></div>
-        <div class="fact"><dt>Based in</dt><dd>Spain</dd></div>
-        <div class="fact"><dt>Game</dt><dd>Forge to Stars</dd></div>
-        <div class="fact"><dt>Genre</dt><dd>Turn-based 4X grand strategy · sci-fi</dd></div>
-        <div class="fact"><dt>Platforms</dt><dd>PC (Windows) via Steam</dd></div>
-        <div class="fact"><dt>Release date</dt><dd>To be announced</dd></div>
-        <div class="fact"><dt>Price</dt><dd>To be announced</dd></div>
-        <div class="fact"><dt>Languages</dt><dd>EN · ES · FR · DE · PT-BR · IT · 简中 · 日本語 · 한국어 · Русский</dd></div>
-        <div class="fact"><dt>Website</dt><dd><a href="https://forgetostudio.com">forgetostudio.com</a></dd></div>
-        <div class="fact"><dt>Press contact</dt><dd><a href="mailto:contact@forgetostudio.com">contact@forgetostudio.com</a></dd></div>
+        <div class="fact"><dt data-i18n="pk.l_dev">Developer</dt><dd data-i18n="pk.v_dev">Forge to Studio — independent</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_based">Based in</dt><dd data-i18n="pk.v_based">Spain</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_game">Game</dt><dd>Forge to Stars</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_genre">Genre</dt><dd data-i18n="pk.v_genre">Turn-based 4X grand strategy · sci-fi</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_plat">Platforms</dt><dd data-i18n="pk.v_plat">PC (Windows) via Steam</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_release">Release date</dt><dd data-i18n="pk.v_tba">To be announced</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_price">Price</dt><dd data-i18n="pk.v_tba">To be announced</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_langs">Languages</dt><dd>EN · ES · FR · DE · PT-BR · IT · 简中 · 日本語 · 한국어 · Русский</dd></div>
+        <div class="fact"><dt data-i18n="pk.l_web">Website</dt><dd><a href="https://forgetostudio.com">forgetostudio.com</a></dd></div>
+        <div class="fact"><dt data-i18n="pk.l_contact">Press contact</dt><dd><a href="mailto:contact@forgetostudio.com">contact@forgetostudio.com</a></dd></div>
       </dl>
 
       <div class="press-block">
         <!-- DESCRIPTION -->
-        <h2>Description</h2>
-        <p>
+        <h2 data-i18n="pk.desc_h">Description</h2>
+        <p data-i18n="pk.desc1">
           <strong>Forge to Stars</strong> is a turn-based 4X grand strategy game. You begin on a
           single forgotten planet — an industrial society taking its first steps — and rise, era by
           era, until you reach for the throne of a shattered galactic empire.
         </p>
-        <p>
+        <p data-i18n="pk.desc2">
           It plays across two connected scales: a hex-based planet you develop and defend by hand,
           and a 3D galaxy of dozens of worlds where rival empires live their own lives — exploring,
           colonizing and going to war whether you are watching or not. Every world can be visited,
@@ -78,19 +79,19 @@
         </p>
 
         <!-- FEATURES -->
-        <h2>Features</h2>
+        <h2 data-i18n="pk.feat_h">Features</h2>
         <ul>
-          <li><strong>A living galaxy.</strong> Rival empires explore, colonize, build and wage war on their own, turn after turn.</li>
-          <li><strong>Real worlds, not menus.</strong> One 3D galaxy of dozens of planets — drop down to any of them and fight for it.</li>
-          <li><strong>Command the battle.</strong> Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</li>
-          <li><strong>An AI that remembers.</strong> AXIOM, your enigmatic guiding intelligence, reacts to the choices you make across the whole campaign.</li>
-          <li><strong>Grow through the eras.</strong> Take a single planet from its industrial age all the way to a spacefaring power.</li>
-          <li><strong>Ten languages.</strong> Fully localized in ten languages at launch.</li>
+          <li data-i18n="pk.f1"><strong>A living galaxy.</strong> Rival empires explore, colonize, build and wage war on their own, turn after turn.</li>
+          <li data-i18n="pk.f2"><strong>Real worlds, not menus.</strong> One 3D galaxy of dozens of planets — drop down to any of them and fight for it.</li>
+          <li data-i18n="pk.f3"><strong>Command the battle.</strong> Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</li>
+          <li data-i18n="pk.f4"><strong>An AI that remembers.</strong> AXIOM, your enigmatic guiding intelligence, reacts to the choices you make across the whole campaign.</li>
+          <li data-i18n="pk.f5"><strong>Grow through the eras.</strong> Take a single planet from its industrial age all the way to a spacefaring power.</li>
+          <li data-i18n="pk.f6"><strong>Ten languages.</strong> Fully localized in ten languages at launch.</li>
         </ul>
 
         <!-- HISTORY -->
-        <h2>History</h2>
-        <p>
+        <h2 data-i18n="pk.hist_h">History</h2>
+        <p data-i18n="pk.hist">
           Forge to Studio is a small independent studio with a single obsession: strategy games that
           respect the player's intelligence. Forge to Stars is our first title — built in the open,
           system by system, with no shortcuts and no half-built mechanics.
@@ -98,40 +99,41 @@
       </div>
 
       <!-- LOGOS & ICON -->
-      <div class="press-block"><h2>Logos &amp; icon</h2></div>
+      <div class="press-block"><h2 data-i18n="pk.logos_h">Logos &amp; icon</h2></div>
       <div class="assets-grid">
-        <a class="asset" href="../assets/logo_forge_studios.png" download><img src="../assets/logo_forge_studios.png" alt="Forge to Studio logo" /><span>Studio logo (PNG)</span></a>
-        <a class="asset" href="../assets/logo_forge_to_stars.png" download><img src="../assets/logo_forge_to_stars.png" alt="Forge to Stars logo" /><span>Forge to Stars logo (PNG)</span></a>
-        <a class="asset" href="../assets/header-capsule.png" download><img src="../assets/header-capsule.png" alt="Header capsule" /><span>Header capsule (PNG)</span></a>
+        <a class="asset" href="../assets/logo_forge_studios.png" download><img src="../assets/logo_forge_studios.png" alt="Forge to Studio logo" /><span data-i18n="pk.al_studio">Studio logo (PNG)</span></a>
+        <a class="asset" href="../assets/logo_forge_to_stars.png" download><img src="../assets/logo_forge_to_stars.png" alt="Forge to Stars logo" /><span data-i18n="pk.al_game">Forge to Stars logo (PNG)</span></a>
+        <a class="asset" href="../assets/header-capsule.png" download><img src="../assets/header-capsule.png" alt="Header capsule" /><span data-i18n="pk.al_capsule">Header capsule (PNG)</span></a>
       </div>
 
       <!-- SCREENSHOTS -->
-      <div class="press-block"><h2>Screenshots</h2><p>Click to download at full resolution. In-engine footage · work in progress.</p></div>
+      <div class="press-block"><h2 data-i18n="pk.shots_h">Screenshots</h2><p data-i18n="pk.shots_note">Click to download at full resolution. In-engine footage · work in progress.</p></div>
       <div class="assets-grid">
-        <a class="asset" href="../assets/shot-galaxy.png" download><img src="../assets/shot-galaxy.png" alt="3D galactic map" /><span>3D galactic map</span></a>
-        <a class="asset" href="../assets/shot-map.png" download><img src="../assets/shot-map.png" alt="Galaxy and hyperlanes" /><span>Galaxy &amp; hyperlanes</span></a>
-        <a class="asset" href="../assets/shot-planet.png" download><img src="../assets/shot-planet.png" alt="Planet surface" /><span>Planet surface</span></a>
-        <a class="asset" href="../assets/shot-space.png" download><img src="../assets/shot-space.png" alt="Space combat" /><span>Space combat</span></a>
-        <a class="asset" href="../assets/menu-golden.jpg" download><img src="../assets/menu-golden.jpg" alt="Key art" /><span>Key art</span></a>
+        <a class="asset" href="../assets/shot-galaxy.png" download><img src="../assets/shot-galaxy.png" alt="3D galactic map" /><span data-i18n="shot.galaxy">3D galactic map</span></a>
+        <a class="asset" href="../assets/shot-map.png" download><img src="../assets/shot-map.png" alt="Galaxy and hyperlanes" /><span data-i18n="shot.map">Galaxy &amp; hyperlanes</span></a>
+        <a class="asset" href="../assets/shot-planet.png" download><img src="../assets/shot-planet.png" alt="Planet surface" /><span data-i18n="shot.planet">Planet surface</span></a>
+        <a class="asset" href="../assets/shot-space.png" download><img src="../assets/shot-space.png" alt="Space combat" /><span data-i18n="shot.space">Space combat</span></a>
+        <a class="asset" href="../assets/menu-golden.jpg" download><img src="../assets/menu-golden.jpg" alt="Key art" /><span data-i18n="pk.al_keyart">Key art</span></a>
       </div>
 
       <!-- CONTACT -->
       <div class="press-block">
-        <h2>Contact</h2>
+        <h2 data-i18n="pk.contact_h">Contact</h2>
         <p>
-          Press &amp; partnerships: <a href="mailto:contact@forgetostudio.com" style="color:var(--cyan)">contact@forgetostudio.com</a><br />
-          Web: <a href="https://forgetostudio.com" style="color:var(--cyan)">forgetostudio.com</a>
+          <span data-i18n="pk.contact_lead">Press &amp; partnerships:</span> <a href="mailto:contact@forgetostudio.com" style="color:var(--cyan)">contact@forgetostudio.com</a><br />
+          <span data-i18n="pk.web_lead">Web:</span> <a href="https://forgetostudio.com" style="color:var(--cyan)">forgetostudio.com</a>
         </p>
-        <p><a class="backlink" href="../">← Back to Forge to Studio</a></p>
+        <p><a class="backlink" href="../" data-i18n="cta.back">← Back to Forge to Studio</a></p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <img class="footer__logo" src="../assets/logo_forge_studios.png" alt="Forge to Studio" />
-    <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · Made with obsession.</p>
+    <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
+  <script src="../i18n.js?v=9"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
