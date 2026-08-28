@@ -36,7 +36,7 @@
 
   const T = {
     en: {
-      'nav.studio': 'Studio', 'nav.game': 'Our games', 'nav.features': 'Features',
+      'nav.studio': 'Studio', 'nav.game': 'Our Games', 'nav.features': 'Features',
       'nav.gallery': 'Gallery', 'nav.wishlist': 'Wishlist', 'nav.press': 'Press', 'nav.contact': 'Contact',
       'hero.eyebrow': 'INDEPENDENT STUDIO · STRATEGY · SCI-FI',
       'hero.title': 'We forge worlds.<br>You decide their fate.',
@@ -67,7 +67,7 @@
       'cta.title': "The empire won't reunify itself.", 'cta.back': '← Back to Forge to Studio',
     },
     es: {
-      'nav.studio': 'Estudio', 'nav.game': 'Nuestros juegos', 'nav.features': 'Características',
+      'nav.studio': 'Estudio', 'nav.game': 'Nuestros Juegos', 'nav.features': 'Características',
       'nav.gallery': 'Galería', 'nav.wishlist': 'Deseados', 'nav.press': 'Prensa', 'nav.contact': 'Contacto',
       'hero.eyebrow': 'ESTUDIO INDEPENDIENTE · ESTRATEGIA · CIENCIA FICCIÓN',
       'hero.title': 'Forjamos mundos.<br>Tú decides su destino.',
