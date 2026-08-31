@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=9" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -68,6 +68,14 @@
           <span class="gamecard__link" data-i18n="gamecard.link">Explore the game →</span>
         </div>
       </a>
+
+      <!-- Making-of del estudio (vídeo comprimido, no autoplay para no cargar 19MB de golpe) -->
+      <div class="devvideo">
+        <video class="devvideo__player" controls preload="none" poster="assets/video-poster.jpg">
+          <source src="assets/video/studio-making-of.mp4" type="video/mp4">
+        </video>
+        <p class="devvideo__cap" data-i18n="games.video">Behind the scenes — building Forge to Stars</p>
+      </div>
     </section>
 
     <!-- STUDIO -->
@@ -109,7 +117,7 @@
     <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
-  <script src="i18n.js?v=9"></script>
+  <script src="i18n.js?v=10"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {

@@ -166,6 +166,18 @@ main > section { max-width: var(--maxw); margin-inline: auto; padding: clamp(3re
 .gamecard__link { display: block; color: var(--cyan); font-weight: 600; }
 .gamecard:hover .gamecard__link { color: var(--cyan-2); }
 
+/* ─── Making-of (vídeo del estudio en "What we're building") ─────────── */
+.devvideo { margin-top: clamp(1.5rem, 4vw, 2.5rem); }
+.devvideo__player {
+  width: 100%; display: block; aspect-ratio: 16 / 9;
+  border: 1px solid var(--line); border-radius: var(--radius); background: #05070d;
+  box-shadow: 0 14px 44px rgba(0,0,0,0.4);
+}
+.devvideo__cap {
+  text-align: center; color: var(--text-dim); font-size: 0.9rem; margin-top: 0.7rem;
+  font-family: 'Orbitron', sans-serif; letter-spacing: 0.04em;
+}
+
 /* ─── Estudio ────────────────────────────────────────── */
 .studio { text-align: center; }
 .studio__text { max-width: 720px; margin: 0 auto; color: var(--text-dim); font-size: 1.12rem; }
