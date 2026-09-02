@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=10" />
+  <link rel="stylesheet" href="../style.css?v=11" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -27,6 +27,7 @@
       <a href="../" data-i18n="nav.studio">Studio</a>
       <a href="#features" data-i18n="nav.features">Features</a>
       <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#art" data-i18n="nav.art">Art</a>
       <a href="#" data-i18n="nav.wishlist" data-todo="Steam">Wishlist</a>
       <select class="lang" aria-label="Language"></select>
     </nav>
@@ -77,13 +78,42 @@
     <!-- GALLERY -->
     <section id="gallery" class="gallery">
       <p class="section__kicker" data-i18n="gallery.kicker">GAMEPLAY</p>
+      <h2 class="section__title" data-i18n="gallery.title">Every world, every war</h2>
       <div class="gallery__grid">
-        <figure class="shot"><img src="../assets/shot-galaxy.png" alt="3D galactic map" loading="lazy" /><figcaption data-i18n="shot.galaxy">3D galactic map</figcaption></figure>
-        <figure class="shot"><img src="../assets/shot-map.png" alt="Galaxy and hyperlanes" loading="lazy" /><figcaption data-i18n="shot.map">Galaxy &amp; hyperlanes</figcaption></figure>
-        <figure class="shot"><img src="../assets/shot-planet.png" alt="Planet surface" loading="lazy" /><figcaption data-i18n="shot.planet">Planet surface</figcaption></figure>
-        <figure class="shot"><img src="../assets/shot-space.png" alt="Space combat" loading="lazy" /><figcaption data-i18n="shot.space">Space combat</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/galaxy-map.png" alt="3D galaxy map" loading="lazy" /><figcaption>3D galaxy map</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/galaxy-systems.png" alt="Systems and hyperlanes" loading="lazy" /><figcaption>Systems &amp; hyperlanes</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/planet-continental.png" alt="Continental planet" loading="lazy" /><figcaption>Planet · continental</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/planet-oceanic.png" alt="Oceanic planet" loading="lazy" /><figcaption>Planet · oceanic</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/planet-frozen.png" alt="Frozen planet" loading="lazy" /><figcaption>Planet · frozen</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/planet-volcanic.png" alt="Volcanic planet" loading="lazy" /><figcaption>Planet · volcanic</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/planet-toxic.png" alt="Toxic planet" loading="lazy" /><figcaption>Planet · toxic</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/ground-combat.png" alt="Ground combat" loading="lazy" /><figcaption>Ground combat</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/ground-ice.png" alt="Ground combat on ice" loading="lazy" /><figcaption>Ground combat · ice</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/ground-desert.png" alt="Ground combat in the desert" loading="lazy" /><figcaption>Ground combat · desert</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/ground-volcanic.png" alt="Ground combat on volcanic terrain" loading="lazy" /><figcaption>Ground combat · volcanic</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/space-combat.png" alt="Space combat" loading="lazy" /><figcaption>Space combat</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/space-orbits.png" alt="Space combat orbits" loading="lazy" /><figcaption>Space combat · orbits</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/space-fleet.png" alt="Space combat fleets" loading="lazy" /><figcaption>Space combat · fleets</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/tech-tree.png" alt="Tech tree" loading="lazy" /><figcaption>Tech tree</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/diplomacy.png" alt="Diplomacy panel" loading="lazy" /><figcaption>Diplomacy</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/world-panel.png" alt="World overview panel" loading="lazy" /><figcaption>World overview</figcaption></figure>
+        <figure class="shot"><img src="../assets/shots/main-menu.png" alt="Main menu" loading="lazy" /><figcaption>Main menu</figcaption></figure>
       </div>
       <p class="gallery__note" data-i18n="gallery.note">In-engine footage · work in progress</p>
+    </section>
+
+    <!-- ART — pantallas de carga + capsules de Steam -->
+    <section id="art" class="artsec">
+      <p class="section__kicker" data-i18n="art.kicker">ART</p>
+      <h2 class="section__title" data-i18n="art.title">Loading screens &amp; key art</h2>
+      <div class="artgrid">
+        <figure class="art"><img class="art__img" src="../assets/loading/loading-planet.jpg" alt="Loading screen — planetfall" loading="lazy" /><figcaption>Loading · planetfall</figcaption></figure>
+        <figure class="art"><img class="art__img" src="../assets/loading/loading-ground.png" alt="Loading screen — ground assault" loading="lazy" /><figcaption>Loading · ground assault</figcaption></figure>
+        <figure class="art"><img class="art__img" src="../assets/loading/loading-space.png" alt="Loading screen — orbital battle" loading="lazy" /><figcaption>Loading · orbital battle</figcaption></figure>
+        <figure class="art"><img class="art__img art__img--contain" src="../assets/capsules/main-capsule.png" alt="Steam main capsule" loading="lazy" /><figcaption>Steam capsule · main</figcaption></figure>
+        <figure class="art art--tall"><img class="art__img" src="../assets/capsules/vertical-capsule.png" alt="Steam vertical capsule" loading="lazy" /><figcaption>Steam capsule · vertical</figcaption></figure>
+        <figure class="art"><img class="art__img art__img--contain" src="../assets/capsules/header-capsule.png" alt="Steam header capsule" loading="lazy" /><figcaption>Steam capsule · header</figcaption></figure>
+      </div>
     </section>
 
     <!-- CTA final -->
@@ -105,7 +135,7 @@
     <img id="lightbox-img" src="" alt="" />
   </div>
 
-  <script src="../i18n.js?v=10"></script>
+  <script src="../i18n.js?v=11"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
@@ -114,7 +144,7 @@
     // Lightbox: clic en una captura → pantalla completa (sin recorte).
     const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lightbox-img');
     const closeLb = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; };
-    document.querySelectorAll('.shot img').forEach(img => {
+    document.querySelectorAll('.shot img, .art img').forEach(img => {
       img.addEventListener('click', () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); });
     });
     lb.addEventListener('click', closeLb);

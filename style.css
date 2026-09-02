@@ -329,6 +329,32 @@ main > section { max-width: var(--maxw); margin-inline: auto; padding: clamp(3re
 .asset img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #05070d; }
 .asset span { display: block; padding: 0.6rem 0.8rem; font-size: 0.85rem; }
 
+/* ─── Galería con título centrado + sección de ARTE ──── */
+.gallery, .artsec { text-align: center; }
+.gallery .section__title, .artsec .section__title { margin-bottom: 1.6rem; }
+
+.artgrid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem; margin-top: 2rem; text-align: left; align-items: start;
+}
+.art {
+  position: relative; margin: 0; overflow: hidden; cursor: zoom-in;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+}
+.art:hover { border-color: var(--cyan); transform: translateY(-3px); box-shadow: 0 14px 40px rgba(46,184,200,0.12); }
+.art__img {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center;
+  display: block; background: #05070d; transition: transform 0.45s ease;
+}
+.art:hover .art__img { transform: scale(1.04); }
+.art__img--contain { object-fit: contain; padding: 0.4rem; }      /* capsules: mostrar el arte completo, sin recorte */
+.art--tall .art__img { aspect-ratio: 3 / 4; }                     /* capsule vertical */
+.art figcaption {
+  padding: 0.7rem 0.9rem; font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem; letter-spacing: 0.05em; color: var(--text-dim);
+}
+
 /* ─── Responsive ─────────────────────────────────────── */
 @media (max-width: 900px) {
   .gamecard { grid-template-columns: 1fr; text-align: center; }

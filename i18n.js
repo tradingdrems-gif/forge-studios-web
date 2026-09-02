@@ -37,7 +37,7 @@
   const T = {
     en: {
       'nav.studio': 'Studio', 'nav.game': 'Our Games', 'nav.features': 'Features',
-      'nav.gallery': 'Gallery', 'nav.wishlist': 'Wishlist', 'nav.press': 'Press', 'nav.contact': 'Contact',
+      'nav.gallery': 'Gallery', 'nav.art': 'Art', 'nav.wishlist': 'Wishlist', 'nav.press': 'Press', 'nav.contact': 'Contact',
       'hero.eyebrow': 'INDEPENDENT STUDIO · STRATEGY · SCI-FI',
       'hero.title': 'We forge worlds.<br>You decide their fate.',
       'hero.lead': "We're a small independent studio chasing one thing: strategy games with the depth of the classics and the craft to earn a place beside them.",
@@ -63,6 +63,9 @@
       'feat.combat.h': 'Command the battle', 'feat.combat.p': 'Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.',
       'feat.axiom.h': 'AXIOM is watching', 'feat.axiom.p': 'Your enigmatic guiding AI — earn its trust, or push it down its Dark path. Your choices, its consequences.',
       'gallery.kicker': 'GAMEPLAY', 'gallery.note': 'In-engine footage · work in progress',
+      'gallery.title': 'Every world, every war',
+      'sgal.kicker': 'SCREENSHOTS', 'sgal.title': 'Straight from the game', 'sgal.more': 'See the full gallery →',
+      'art.kicker': 'ART', 'art.title': 'Loading screens & key art',
       'shot.galaxy': '3D galactic map', 'shot.map': 'Galaxy & hyperlanes', 'shot.planet': 'Planet surface', 'shot.space': 'Space combat',
       'cta.title': "The empire won't reunify itself.", 'cta.back': '← Back to Forge to Studio',
     },
