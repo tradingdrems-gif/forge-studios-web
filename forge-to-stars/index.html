@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=12" />
+  <link rel="stylesheet" href="../style.css?v=14" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -26,6 +26,8 @@
     <nav class="nav__links">
       <a href="../" data-i18n="nav.studio">Studio</a>
       <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#factions" data-i18n="nav.factions">Factions</a>
+      <a href="#lore" data-i18n="nav.lore">Lore</a>
       <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
       <a href="#art" data-i18n="nav.art">Art</a>
       <select class="lang" aria-label="Language"></select>
@@ -56,22 +58,73 @@
       <h2 class="section__title" data-i18n="features.title">A galaxy that lives without you</h2>
       <div class="features-grid">
         <div class="feature">
-          <h3 data-i18n="feat.living.h">A living galaxy</h3>
-          <p data-i18n="feat.living.p">Rival empires explore, colonize, build and wage war on their own — turn after turn, whether you're watching or not.</p>
+          <h3 data-i18n="feat.worlds.h">Real worlds, not menus</h3>
+          <p data-i18n="feat.worlds.p">Every planet in the galaxy has its own 3D map. Drop down to any of them and conquer it, hex by hex — no world is off-limits.</p>
         </div>
         <div class="feature">
-          <h3 data-i18n="feat.worlds.h">Real worlds, not menus</h3>
-          <p data-i18n="feat.worlds.p">One 3D galaxy of dozens of planets. Drop down to any of them and fight for it, hex by hex.</p>
+          <h3 data-i18n="feat.factions.h">Five great powers</h3>
+          <p data-i18n="feat.factions.p">Five major factions, each with its own personality, ambitions and way of waging war — exploring, colonizing and fighting on their own, turn after turn.</p>
+        </div>
+        <div class="feature">
+          <h3 data-i18n="feat.minors.h">A galaxy full of factions</h3>
+          <p data-i18n="feat.minors.p">Beyond the great powers, a host of minor factions scheme, trade and fight for their place among the stars.</p>
+        </div>
+        <div class="feature">
+          <h3 data-i18n="feat.lore.h">A world of deep lore</h3>
+          <p data-i18n="feat.lore.p">Every faction, world and war is rooted in a deep, written history — waiting for you to uncover it.</p>
         </div>
         <div class="feature">
           <h3 data-i18n="feat.combat.h">Command the battle</h3>
           <p data-i18n="feat.combat.p">Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</p>
         </div>
-        <div class="feature">
-          <h3 data-i18n="feat.axiom.h">AXIOM is watching</h3>
-          <p data-i18n="feat.axiom.p">Your enigmatic guiding AI — earn its trust, or push it down its Dark path. Your choices, its consequences.</p>
-        </div>
       </div>
+    </section>
+
+    <!-- FACTIONS — 5 grandes potencias + menores, bajo un mismo paraguas -->
+    <section id="factions" class="factionsec">
+      <p class="section__kicker" data-i18n="fac.kicker">THE POWERS</p>
+      <h2 class="section__title" data-i18n="fac.title">Who rules the ashes</h2>
+      <div class="facgrid">
+        <article class="fac" style="--fac:#4d8de6">
+          <div class="fac__art"><img src="../assets/factions/auren.jpg" alt="Auren Alliance" loading="lazy" /></div>
+          <div class="fac__body"><h3 class="fac__name" data-i18n="fac.auren.h">Auren Alliance</h3><p class="fac__desc" data-i18n="fac.auren.p">Self-proclaimed heirs of the fallen Empire — arrogant, influential and masters of legitimacy and diplomacy.</p></div>
+        </article>
+        <article class="fac" style="--fac:#d94040">
+          <div class="fac__art"><img src="../assets/factions/draeth.jpg" alt="Draeth Horde" loading="lazy" /></div>
+          <div class="fac__body"><h3 class="fac__name" data-i18n="fac.draeth.h">Draeth Horde</h3><p class="fac__desc" data-i18n="fac.draeth.p">Warrior nomads who lost their frozen homeworld. They move fast, strike hard and never settle.</p></div>
+        </article>
+        <article class="fac" style="--fac:#8040d9">
+          <div class="fac__art"><img src="../assets/factions/kaelith.jpg" alt="Kaelith Theocracy" loading="lazy" /></div>
+          <div class="fac__body"><h3 class="fac__name" data-i18n="fac.kaelith.h">Kaelith Theocracy</h3><p class="fac__desc" data-i18n="fac.kaelith.p">Crystal-skinned zealots bound by faith, who worship a silent god they believe still watches the stars.</p></div>
+        </article>
+        <article class="fac" style="--fac:#33bf8a">
+          <div class="fac__art"><img src="../assets/factions/omvex.jpg" alt="Omvex Corporation" loading="lazy" /></div>
+          <div class="fac__body"><h3 class="fac__name" data-i18n="fac.omvex.h">Omvex Corporation</h3><p class="fac__desc" data-i18n="fac.omvex.p">A megacorporation where everything has a price. They negotiate even in the middle of a war.</p></div>
+        </article>
+        <article class="fac" style="--fac:#e6bf33">
+          <div class="fac__art"><img src="../assets/factions/zethari.jpg" alt="Zethari Conclave" loading="lazy" /></div>
+          <div class="fac__body"><h3 class="fac__name" data-i18n="fac.zethari.h">Zethari Conclave</h3><p class="fac__desc" data-i18n="fac.zethari.p">Transhuman technocrats always one era ahead, trading knowledge for influence.</p></div>
+        </article>
+      </div>
+      <div class="minors">
+        <h3 class="minors__h" data-i18n="fac.minors.h">…and a galaxy of minor powers</h3>
+        <p class="minors__p" data-i18n="fac.minors.p">Beyond the five: pirate clans like the Red Claw, mercenary companies, free ports, exiled survivors and forgotten colonies — dozens of factions fighting for their place.</p>
+      </div>
+    </section>
+
+    <!-- LORE — cronología del auge y la caída (spoiler-safe) -->
+    <section id="lore" class="loresec">
+      <p class="section__kicker" data-i18n="lore.kicker">THE LORE</p>
+      <h2 class="section__title" data-i18n="lore.title">The rise and fall of the galaxy</h2>
+      <ol class="timeline">
+        <li class="tl"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">Ancient Era</span><h3 data-i18n="lore.e1.h">The old ones</h3><p data-i18n="lore.e1.p">Long before the Empire, the galaxy's oldest ones watched the stars alone.</p></div></li>
+        <li class="tl"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">The Founding</span><h3 data-i18n="lore.e2.h">One pact, one Empire</h3><p data-i18n="lore.e2.p">Twenty-eight spacefaring peoples united under a single pact — the Great Galactic Empire was born.</p></div></li>
+        <li class="tl"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">The Golden Age</span><h3 data-i18n="lore.e3.h">The Long Sun</h3><p data-i18n="lore.e3.p">Millennia of peace, science and shared cities across thousands of worlds.</p></div></li>
+        <li class="tl"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">The Decline</span><h3 data-i18n="lore.e4.h">Rot from within</h3><p data-i18n="lore.e4.p">Corruption, dynastic wars and economic collapse hollowed the Empire from within.</p></div></li>
+        <li class="tl tl--fall"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">Year Zero</span><h3 data-i18n="lore.e5.h">The Fall</h3><p data-i18n="lore.e5.p">In a single year the capital burned, the currency died and seven worlds fell silent. The Empire was over.</p></div></li>
+        <li class="tl"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">0–3000 after the Fall</span><h3 data-i18n="lore.e6.h">The Dark Years</h3><p data-i18n="lore.e6.p">Three thousand years of fragmentation — successor powers, countless minor factions and a galaxy that forgot what it was.</p></div></li>
+        <li class="tl tl--now"><div class="tl__dot"></div><div class="tl__c"><span class="tl__age">Now · 3000 PG</span><h3 data-i18n="lore.e7.h">A spark in the dark</h3><p data-i18n="lore.e7.p">From a single forgotten planet, a new power stirs. The empire won't reunify itself.</p></div></li>
+      </ol>
     </section>
 
     <!-- GALLERY -->
@@ -134,7 +187,7 @@
     <img id="lightbox-img" src="" alt="" />
   </div>
 
-  <script src="../i18n.js?v=12"></script>
+  <script src="../i18n.js?v=14"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
@@ -143,7 +196,7 @@
     // Lightbox: clic en una captura → pantalla completa (sin recorte).
     const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lightbox-img');
     const closeLb = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; };
-    document.querySelectorAll('.shot img, .art img').forEach(img => {
+    document.querySelectorAll('.shot img, .art img, .fac__art img').forEach(img => {
       img.addEventListener('click', () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); });
     });
     lb.addEventListener('click', closeLb);

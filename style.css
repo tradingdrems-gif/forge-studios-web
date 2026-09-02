@@ -355,6 +355,55 @@ main > section { max-width: var(--maxw); margin-inline: auto; padding: clamp(3re
   font-size: 0.8rem; letter-spacing: 0.05em; color: var(--text-dim);
 }
 
+/* ─── Facciones (5 grandes + menores, bajo un mismo paraguas) ───────── */
+.factionsec, .loresec { text-align: center; }
+.factionsec .section__title, .loresec .section__title { margin-bottom: 1.8rem; }
+.facgrid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem; text-align: left;
+}
+.fac {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; border-top: 3px solid var(--fac, var(--cyan));
+  transition: transform 0.2s, box-shadow 0.25s;
+}
+.fac:hover { transform: translateY(-4px); box-shadow: 0 16px 44px rgba(0,0,0,0.42); }
+.fac__art { aspect-ratio: 3 / 4; overflow: hidden; background: #05070d; cursor: zoom-in; }
+.fac__art img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  display: block; transition: transform 0.5s ease;
+}
+.fac:hover .fac__art img { transform: scale(1.05); }
+.fac__body { padding: 0.9rem 1rem 1.1rem; }
+.fac__name {
+  font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.02rem;
+  color: var(--fac, var(--cyan)); margin-bottom: 0.45rem;
+}
+.fac__desc { color: var(--text-dim); font-size: 0.9rem; line-height: 1.5; }
+.minors { max-width: 760px; margin: 2.2rem auto 0; }
+.minors__h { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--gold); margin-bottom: 0.5rem; }
+.minors__p { color: var(--text-dim); font-size: 1rem; }
+
+/* ─── Cronología del auge y la caída (timeline vertical) ────────────── */
+.timeline { list-style: none; max-width: 760px; margin: 0 auto; padding: 0; text-align: left; position: relative; }
+.timeline::before {
+  content: ''; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px;
+  background: linear-gradient(180deg, var(--cyan), var(--gold) 55%, rgba(212,168,67,0.12));
+}
+.tl { position: relative; padding: 0 0 1.6rem 2.2rem; }
+.tl:last-child { padding-bottom: 0; }
+.tl__dot {
+  position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--cyan); box-shadow: 0 0 12px rgba(46,184,200,0.5);
+}
+.tl--fall .tl__dot { border-color: #d94040; box-shadow: 0 0 14px rgba(217,64,64,0.6); }
+.tl--now .tl__dot { border-color: var(--gold); box-shadow: 0 0 14px rgba(212,168,67,0.6); }
+.tl__age { font-family: 'Orbitron', sans-serif; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cyan); }
+.tl--fall .tl__age { color: #e56a6a; }
+.tl--now .tl__age { color: var(--gold); }
+.tl__c h3 { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem; margin: 0.2rem 0 0.35rem; }
+.tl__c p { color: var(--text-dim); font-size: 0.98rem; }
+
 /* ─── "Coming soon": CTAs/enlaces aún no activos (sin link muerto) ───── */
 .btn.is-soon { cursor: default; }
 .btn.is-soon:hover { transform: none; }
