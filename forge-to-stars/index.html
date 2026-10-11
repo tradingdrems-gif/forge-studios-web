@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=14" />
+  <link rel="stylesheet" href="../style.css?v=15" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -25,6 +25,7 @@
     <a class="nav__brand" href="../"><img src="../assets/logo_forge_studios.png" alt="Forge to Studio" /></a>
     <nav class="nav__links">
       <a href="../" data-i18n="nav.studio">Studio</a>
+      <a href="#trailer" data-i18n="nav.trailer">Trailer</a>
       <a href="#features" data-i18n="nav.features">Features</a>
       <a href="#factions" data-i18n="nav.factions">Factions</a>
       <a href="#lore" data-i18n="nav.lore">Lore</a>
@@ -47,36 +48,60 @@
         Every system, every war and every world is yours to claim.
       </p>
       <div class="hero__cta">
+        <a class="btn btn--gold" href="#trailer"><span class="btn__icon">▶</span> <span data-i18n="game.watch">Watch the trailer</span></a>
         <span class="btn btn--steam is-soon"><span class="btn__icon">▶</span> <span data-i18n="game.wishlist">Wishlist on Steam</span> <span class="soon-tag" data-i18n="misc.soon">Coming soon</span></span>
       </div>
       <p class="game__note" data-i18n="game.platforms">Coming soon to Steam · PC (Windows)</p>
     </section>
 
-    <!-- FEATURES -->
-    <section id="features" class="features-sec">
-      <p class="section__kicker" data-i18n="features.kicker">WHAT MAKES IT DIFFERENT</p>
-      <h2 class="section__title" data-i18n="features.title">A galaxy that lives without you</h2>
-      <div class="features-grid">
-        <div class="feature">
-          <h3 data-i18n="feat.worlds.h">Real worlds, not menus</h3>
-          <p data-i18n="feat.worlds.p">Every planet in the galaxy has its own 3D map. Drop down to any of them and conquer it, hex by hex — no world is off-limits.</p>
-        </div>
-        <div class="feature">
-          <h3 data-i18n="feat.factions.h">Five great powers</h3>
-          <p data-i18n="feat.factions.p">Five major factions, each with its own personality, ambitions and way of waging war — exploring, colonizing and fighting on their own, turn after turn.</p>
-        </div>
-        <div class="feature">
-          <h3 data-i18n="feat.minors.h">A galaxy full of factions</h3>
-          <p data-i18n="feat.minors.p">Beyond the great powers, a host of minor factions scheme, trade and fight for their place among the stars.</p>
-        </div>
-        <div class="feature">
-          <h3 data-i18n="feat.lore.h">A world of deep lore</h3>
-          <p data-i18n="feat.lore.p">Every faction, world and war is rooted in a deep, written history — waiting for you to uncover it.</p>
-        </div>
-        <div class="feature">
-          <h3 data-i18n="feat.combat.h">Command the battle</h3>
-          <p data-i18n="feat.combat.p">Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</p>
-        </div>
+    <!-- TRAILER — vídeo comprimido (1080p60, faststart); sin precarga hasta que le den a play -->
+    <section id="trailer" class="trailer">
+      <p class="section__kicker" data-i18n="trailer.kicker">OFFICIAL TRAILER</p>
+      <h2 class="section__title" data-i18n="trailer.title">Benevolent leader or ruthless tyrant?</h2>
+      <div class="trailer__frame">
+        <video class="trailer__player" controls preload="none" playsinline poster="../assets/trailer-poster.jpg">
+          <source src="../assets/video/forge-to-stars-trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- CÓMO SE JUEGA — mecánicas reales del juego (verificadas en el código), filas alternas imagen/texto -->
+    <section id="features" class="mechsec">
+      <p class="section__kicker" data-i18n="mech.kicker">HOW YOU PLAY</p>
+      <h2 class="section__title" data-i18n="mech.title">Every decision leaves a mark</h2>
+      <div class="mechs">
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/shots/planet-continental.png" alt="Planet map" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">01</span><h3 data-i18n="mech.m1.h">From one planet to the galaxy</h3><p data-i18n="mech.m1.p">Start on a single industrial world: found cities, build roads, research and fight for every hex of your homeworld. Seize its starbase and the 3D galaxy opens up — dozens of worlds you can land on and conquer, hex by hex.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/trailer/regiments.jpg" alt="Regiments marching" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">02</span><h3 data-i18n="mech.m2.h">Every soldier is one of your citizens</h3><p data-i18n="mech.m2.p">Regiments are raised from your own population. Each recruit brings their own strength, agility and resilience — a better crew makes the same regiment better, veterans grow with every battle, and every casualty is a citizen who won't come home.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/shots/ground-desert.png" alt="Ground combat" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">03</span><h3 data-i18n="mech.m3.h">Tactics that reward thinking</h3><p data-i18n="mech.m3.p">Facing matters: strike a flank for ×1.3 damage, the rear for ×1.5. Take cover in forests, buildings and rock, hold overwatch, pin enemies down, call in the artillery — and watch weather and morale turn the tide.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/shots/space-orbits.png" alt="Space combat in three orbits" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">04</span><h3 data-i18n="mech.m4.h">War in three orbits</h3><p data-i18n="mech.m4.p">Space battles are fought across high, middle and low orbit. Every ship is armoured side by side — manoeuvre between orbits to hit where the hull is weakest.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/loading/loading-ground.png" alt="Ground assault" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">05</span><h3 data-i18n="mech.m5.h">Conquer, plunder, raze — or make them kneel</h3><p data-i18n="mech.m5.p">When a city falls, its fate is yours: annex it, sack it, burn it to the ground, or turn a beaten faction into your vassal.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/trailer/leader-or-tyrant.jpg" alt="Benevolent ruler or ruthless tyrant?" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">06</span><h3 data-i18n="mech.m6.h">Leader or tyrant?</h3><p data-i18n="mech.m6.p">Every victory asks something of you: recruit the prisoners, set them free or execute them. Mercy and fear both have a price — and AXIOM, the AI that guides you, remembers every choice you make.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/shots/tech-tree.png" alt="Tech tree" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">07</span><h3 data-i18n="mech.m7.h">Five eras, one rise</h3><p data-i18n="mech.m7.p">Climb from muskets and field cannons to plasma rifles and antimatter. Research reshapes your army, and veteran regiments can be re-equipped for each new era without losing who they are.</p></div>
+        </article>
+        <article class="mech">
+          <div class="mech__media"><img src="../assets/shots/diplomacy.png" alt="Diplomacy" loading="lazy" /></div>
+          <div class="mech__body"><span class="mech__num">08</span><h3 data-i18n="mech.m8.h">Diplomacy, spies and vassals</h3><p data-i18n="mech.m8.p">Five great powers and dozens of minor factions trade, ally, betray and wage war on their own. Send spies, sign pacts — or bring your rivals to heel.</p></div>
+        </article>
       </div>
     </section>
 
@@ -187,7 +212,7 @@
     <img id="lightbox-img" src="" alt="" />
   </div>
 
-  <script src="../i18n.js?v=14"></script>
+  <script src="../i18n.js?v=15"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     for (const a of document.querySelectorAll('a[href^="#"]')) {
@@ -196,7 +221,7 @@
     // Lightbox: clic en una captura → pantalla completa (sin recorte).
     const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lightbox-img');
     const closeLb = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; };
-    document.querySelectorAll('.shot img, .art img, .fac__art img').forEach(img => {
+    document.querySelectorAll('.shot img, .art img, .fac__art img, .mech__media img').forEach(img => {
       img.addEventListener('click', () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); });
     });
     lb.addEventListener('click', closeLb);

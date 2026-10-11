@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=14" />
+  <link rel="stylesheet" href="../style.css?v=15" />
 </head>
 <body>
   <div class="starfield" aria-hidden="true"></div>
@@ -84,6 +84,9 @@
           <li data-i18n="pk.f1"><strong>A living galaxy.</strong> Rival empires explore, colonize, build and wage war on their own, turn after turn.</li>
           <li data-i18n="pk.f2"><strong>Real worlds, not menus.</strong> One 3D galaxy of dozens of planets — drop down to any of them and fight for it.</li>
           <li data-i18n="pk.f3"><strong>Command the battle.</strong> Turn-based tactical combat on the ground and in orbit, led through a deck of unit cards.</li>
+          <li data-i18n="pk.f8"><strong>Every soldier is a citizen.</strong> Regiments are raised from your own population — a better crew makes a better unit, and every loss is a real person.</li>
+          <li data-i18n="pk.f9"><strong>Tactics that matter.</strong> Facing, flanking, cover, overwatch, weather and morale on the ground; three stacked orbits and per-side armour in space.</li>
+          <li data-i18n="pk.f10"><strong>Leader or tyrant.</strong> Decide the fate of prisoners and conquered cities — annex, sack, raze or vassalize — while AXIOM, your guiding AI, remembers every choice.</li>
           <li data-i18n="pk.f4"><strong>Five great powers.</strong> Five major factions with their own personality and agenda, plus a host of minor factions fighting for their place.</li>
           <li data-i18n="pk.f5"><strong>Grow through the eras.</strong> Take a single planet from its industrial age all the way to a spacefaring power.</li>
           <li data-i18n="pk.f7"><strong>A deep, living lore.</strong> Every faction, world and war is rooted in a written history waiting to be uncovered.</li>
@@ -97,6 +100,20 @@
           respect the player's intelligence. Forge to Stars is our first title — built in the open,
           system by system, with no shortcuts taken.
         </p>
+      </div>
+
+      <!-- TRAILER -->
+      <div class="press-block">
+        <h2 data-i18n="pk.trailer_h">Trailer</h2>
+        <p data-i18n="pk.trailer_p">Official trailer · 1:06 · 1080p60 (MP4, 33 MB). Free to use in coverage and videos.</p>
+      </div>
+      <div class="trailer__frame">
+        <video class="trailer__player" controls preload="none" playsinline poster="../assets/trailer-poster.jpg">
+          <source src="../assets/video/forge-to-stars-trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="press-block" style="text-align:center;margin-top:1.2rem">
+        <a class="btn btn--ghost" href="../assets/video/forge-to-stars-trailer.mp4" download data-i18n="pk.trailer_dl">Download trailer (MP4)</a>
       </div>
 
       <!-- LOGOS & ICON -->
@@ -141,7 +158,7 @@
     <p class="footer__copy">© <span id="year">2026</span> Forge to Studio · <span data-i18n="footer.tag">Made with obsession.</span></p>
   </footer>
 
-  <script src="../i18n.js?v=14"></script>
+  <script src="../i18n.js?v=15"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
